@@ -1,0 +1,33 @@
+.DescriptionContainer {
+  background-color: #0D0A06;
+  font-family: 'Outfit', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  margin: 0;
+}
+
+.DescriptionContainer span a {
+  color: #8D7D41;
+  text-decoration: none;
+}
+
+.DescriptionContainer span a:hover {
+  text-decoration: underline;
+  transition: transform 1s ease;
+}
+
+@media screen and (max-width: 1030px) {
+  .DescriptionContainer {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 1025px) {
+  .DescriptionContainer {
+    display: none;
+  }
+}

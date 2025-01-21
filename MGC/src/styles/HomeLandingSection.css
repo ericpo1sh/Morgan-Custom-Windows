@@ -1,0 +1,115 @@
+.HomePageLandingSection {
+  background-image: url('../assets/HomeBackgroundPic.png');
+  height: 650px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.HomePageLandingInnerContainer {
+  display: flex;
+  width: 90%;
+  justify-content: space-between;
+  flex-wrap: wrap-reverse;
+}
+
+.HomePageLeftModule {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Outfit';
+  color: #fff;
+  max-width: 700px;
+}
+
+.HomePageLeftModule h1 {
+  font-size: 24px;
+  font-weight: 300;
+}
+
+.HomePageLeftModule h2 {
+  margin-top: -5px;
+  margin-bottom: -5px;
+  font-size: 38px;
+  font-weight: 600;
+}
+
+.HomePageLeftModule h3 {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.cta-button {
+  width: 400px;
+  height: 90px;
+  color: #fff;
+  font-size: 30px;
+  font-weight: 600;
+  border: 2px solid #FFF;
+  font-family: 'Outfit';
+  background: #8D7D41;
+  transition: 1s ease;
+  cursor: pointer;
+}
+
+.cta-button:hover {
+  transform: scale(1.05);
+  transition: 1s ease;
+}
+
+.HomePageRightModule {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  max-width: 600px;
+}
+
+.HomePageRightModule img {
+  width: 600px;
+}
+
+@media screen and (max-width: 1615px) {
+  .HomePageRightModule img {
+    width: 550px;
+  }
+}
+
+@media screen and (max-width: 1445px) {
+  .HomePageLeftModule {
+    max-width: 575px;
+  }
+
+  .HomePageLeftModule h1 {
+    font-size: 20px;
+    font-weight: 300;
+  }
+  
+  .HomePageLeftModule h2 {
+    margin-top: -5px;
+    margin-bottom: -5px;
+    font-size: 30px;
+    font-weight: 600;
+  }
+  
+  .HomePageLeftModule h3 {
+    font-size: 20px;
+    font-weight: 400;
+  }
+  
+
+  .HomePageRightModule img {
+    width: 500px;
+  }
+}
+
+@media screen and (max-width: 1210px) {
+  .HomePageRightModule img {
+    width: 400px;
+  }
+}
+
+
+@media screen and (max-width: 1095px) {
+  .HomePageRightModule img {
+    width: 300px;
+  }
+}
