@@ -9,7 +9,7 @@ const HomeLandingSection = () => {
       <div className='HomePageLandingInnerContainer'>
         <div className='HomePageLeftModule'>
           <h1>Custom Window Replacements for the Tulsa Metropolitan Area</h1>
-          <h2>Elevate Your Tulsa Home with Custom Windows Built for Quality and Efficiency</h2>
+          <h2>Elevate Your Tulsa Home with Custom Windows Built With Quality and Efficiency</h2>
           <h3>Proudly Serving Tulsa, Broken Arrow, Owasso, and the Surrounding Areas Across Northeastern Oklahoma</h3>
           <button aria-label="Book your assessment with Morgan Custom Windows" className="cta-button">BOOK YOUR ASSESSMENT</button>
         </div>

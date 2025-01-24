@@ -1,0 +1,200 @@
+.cta-button {
+  margin-top: 15px;
+  margin-bottom: 10px;
+  align-self: center;
+  width: 300px;
+  height: 60px;
+  color: #fff;
+  font-size: 22px;
+  font-weight: 600;
+  border: 2px solid #FFF;
+  font-family: 'Outfit';
+  background: #8D7D41;
+  transition: 1s ease;
+  cursor: pointer;
+}
+
+.cta-button:hover {
+  transform: scale(1.05);
+  transition: 1s ease;
+}
+
+@media screen and (max-width: 400px) {
+  .cta-button {
+    width: 250px;
+    font-size: 18px;
+  }
+}
+
+.IntroOuterContainer {
+  background: #22231F;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+}
+
+.InnerIntroContainer {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.IntroLeftModule {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  max-width: 550px;
+  width: auto;
+  height: auto;
+  background-color: #D9D9D9;
+  font-family: Outfit;
+  max-height: 550px;
+  padding: 20px;
+}
+
+.IntroTextContainer {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.IntroTextContainer h2 {
+  color: #8D7D41;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.IntroTextContainer h3 {
+  color: #634521;
+  font-size: 38px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.IntroTextContainer p {
+  color: rgba(15, 10, 4, 0.65);
+  font-family: Outfit;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.IntroTextContainer h3 {
+  margin-top: -5px;
+  margin-bottom: -5px;
+}
+
+.IntroTextContainer p {
+  width: 95%;
+}
+
+.FourChecksIntro {
+  display: grid;
+  flex-wrap: nowrap;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-between;
+  width: 95%;
+  align-self: center;
+}
+
+.FourChecksIntro span {
+  display: flex;
+  flex-direction: row;
+}
+
+.FourChecksIntro img {
+  margin-top: 15px;
+}
+
+.FourChecksIntro span p {
+  color: #0F0A04;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.ExamplePicFrame {
+  border-radius: 5px;
+  border: 1px solid #FFF;
+  background: rgba(217, 217, 217, 0.20);
+  padding: 30px;
+}
+
+.ExamplePicFrame img {
+  max-width: 550px;
+}
+
+@media screen and (max-width: 1350px) {
+  .IntroLeftModule {
+    max-width: 500px;
+    width: auto;
+  }
+
+  .IntroTextContainer h2 {
+    font-size: 16px;
+  }
+
+  .IntroTextContainer h3 {
+    font-size: 34px;
+  }
+
+  .IntroTextContainer p {
+    font-size: 16px;
+  }
+
+  .FourChecksIntro span p {
+    font-size: 18px;
+  }
+
+  .ExamplePicFrame img {
+    max-width: 500px;
+  }
+}
+
+@media screen and (max-width: 1220px) {
+  .IntroLeftModule {
+    max-width: 450px;
+    width: auto;
+  }
+
+  .IntroTextContainer h2 {
+    font-size: 14px;
+  }
+
+  .IntroTextContainer h3 {
+    font-size: 32px;
+  }
+
+  .IntroTextContainer p {
+    font-size: 14px;
+  }
+
+  .FourChecksIntro span p {
+    font-size: 16px;
+    margin-top: 25px;
+  }
+
+  .ExamplePicFrame img {
+    max-width: 325px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .ExamplePicFrame {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    width: auto;
+  }
+
+  .ExamplePicFrame img {
+    width: auto;
+    max-width: 425px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  
+}

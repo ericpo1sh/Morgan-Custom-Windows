@@ -1,0 +1,33 @@
+.scrolling-container {
+  width: 100%;
+  overflow: hidden; /* Hide overflowing content */
+  white-space: nowrap; /* Prevent text wrapping */
+  background-color: #FFF; /* Background color */
+  padding: 1rem 0; /* Optional padding */
+  position: relative;
+}
+
+.scrolling-content {
+  display: inline-block;
+  padding-left: 100%; /* Start outside the viewport */
+  animation: scroll 30s linear infinite; /* Adjust duration as needed */
+}
+
+.scrolling-content span {
+  display: inline-block;
+  margin-right: 10rem; /* Spacing between items */
+  font-family: "Outfit";
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #22231F;
+}
+
+/* Animation for seamless scrolling */
+@keyframes scroll {
+  0% {
+    transform: translateX(0); /* Start at the original position */
+  }
+  100% {
+    transform: translateX(-100%); /* Move entire content out of view */
+  }
+}
