@@ -9,8 +9,8 @@ const LandingCompanyIntro = () => {
         <div className='IntroLeftModule'>
           <div className='IntroTextContainer'>
             <h2>SERVING THE GREATER SOUTHEASTERN OKLAHOMA AREA</h2>
-            <h3>The Morgan Window Promise</h3>
-            <p>At Morgan Windows, we take pride in delivering top-quality window  solutions for both residential and commercial properties. Whether you're upgrading your home with energy-efficient designs or enhancing your  business with custom windows, our team is here to make the process  seamless and worry-free. We’re committed to craftsmanship, transparency, and customer satisfaction, ensuring every project exceeds expectations from start to finish.</p>
+            <h3>Our Commitment to Excellence</h3>
+            <p>At Morgan Custom Windows, we take pride in delivering top-quality window  solutions for both residential and commercial properties. Whether you're upgrading your home with energy-efficient designs or enhancing your  business with custom windows, our team is here to make the process  seamless and worry-free. We’re committed to craftsmanship, transparency, and customer satisfaction, ensuring every project exceeds expectations from start to finish.</p>
           </div>
           <div className='FourChecksIntro'>
             <span><img src={GoldCheck} alt='' width={'50px'} height={'50px'}/><p>Free Estimates</p></span>
