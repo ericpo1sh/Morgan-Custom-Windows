@@ -2,8 +2,8 @@ import React from 'react';
 
 const InstallationIcon = (props) => (
   <svg
-    width="87"
-    height="84"
+    width="77"
+    height="77"
     viewBox="0 0 87 84"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"

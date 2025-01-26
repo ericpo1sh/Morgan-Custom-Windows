@@ -27,7 +27,7 @@
   font-size: 18px;
   color: #444;
   line-height: 1.6;
-  margin: 0 auto 40px auto;
+  margin: 0 auto 25px auto;
   max-width: 1000px;
 }
 
@@ -59,7 +59,7 @@
 .feature-card p {
   font-family: 'Outfit', sans-serif;
   font-size: 16px;
-  color: #666;
+  color: #665;
   line-height: 1.5;
 }
 
@@ -113,5 +113,23 @@
 
   .feature-card p {
     font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 590px) {
+  .section-header h2 {
+    font-size: 18px;
+    max-width: 300px;
+    margin: 0px auto -30px auto;
+  }
+
+  .section-header h3 {
+    font-size: 32px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .section-header h3 {
+    font-size: 26px;
   }
 }

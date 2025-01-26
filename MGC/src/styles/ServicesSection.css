@@ -44,7 +44,6 @@
 .service-card {
   max-width: 370px;
   background-color: #D9D9D9;
-  border: 1px solid #D9D9D9;
   border-radius: 8px;
   padding: 20px;
   flex: 1 1 30%;
@@ -103,3 +102,4 @@
     margin-bottom: 20px;
   }
 }
+

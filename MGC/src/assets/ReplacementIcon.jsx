@@ -2,8 +2,8 @@ import React from 'react';
 
 const ReplacementIcon = (props) => (
   <svg
-    width="74"
-    height="74"
+    width="77"
+    height="77"
     viewBox="0 0 74 74"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"

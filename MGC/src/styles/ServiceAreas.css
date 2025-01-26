@@ -1,0 +1,136 @@
+/* General Section Styling */
+.service-areas {
+  padding: 50px 20px;
+  background-color: #22231F;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.service-areas-container {
+  display: flex;
+  align-items: center;
+  max-width: 1300px;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.map-container {
+  flex: 1;
+  background: rgba(217, 217, 217, 0.20);
+  padding: 50px 20px 50px 20px;
+  border: 2px solid #d9d9d9;
+  border-right: none;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+.oklahoma-map {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+.content-container {
+  flex: 1;
+  background-color: #d9d9d9;
+  padding: 30px;
+  border-radius: 8px;
+  text-align: left;
+  min-width: 55%;
+}
+
+.content-container h2 {
+  font-family: 'Outfit', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #8D7D41;
+  text-transform: uppercase;
+  margin-bottom: -30px;
+}
+
+.content-container h3 {
+  font-family: 'Outfit', sans-serif;
+  font-size: 34px;
+  font-weight: 500;
+  color: #634521;
+  margin-bottom: 20px;
+}
+
+.content-container p {
+  font-family: 'Outfit', sans-serif;
+  font-size: 22px;
+  color: #333;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.cta-container {
+  display: flex;
+  align-items: center;
+  justify-self: center;
+}
+
+.cta-button {
+  padding: 15px 30px;
+  font-family: 'Outfit', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: #fff;
+  background-color: #8D7D41;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  transform: scale(1.05);
+  background-color: #634521;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .service-areas-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .map-container {
+    margin-bottom: 20px;
+    border: 2px solid #d9d9d9;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 0px;
+    margin-bottom: 0px;
+  }
+
+  .content-container {
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    text-align: left;
+  }
+}
+
+@media screen and (max-width: 465px) {
+  .content-container {
+    text-align: left;
+  }
+
+  .content-container h2 {
+    font-size: 15px;
+    margin-bottom: -25px;
+  }
+  
+  .content-container h3 {
+    font-size: 27px;
+  }
+  
+  .content-container p {
+    font-size: 18px;
+  }
+
+  .cta-button {
+    padding: 0;
+  }
+}
