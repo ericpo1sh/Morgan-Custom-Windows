@@ -15,10 +15,9 @@ const ThreeSteps = () => {
           <img src={CallIcon} alt="Call Icon" />
           <h4>Call (000) 000-0000</h4>
           <p>
-            Reach out to us to discuss your window needs and get answers to any
-            questions you have.
+          Reach out to us today to discuss your window needs and get personalized answers to any questions you have.
           </p>
-          <div className="step-number">1</div>
+          <div className="step-number-one">1</div>
         </div>
         <div className="step-card">
           <img src={CalendarIcon} alt="Calendar Icon" />
@@ -27,7 +26,7 @@ const ThreeSteps = () => {
             Set up a no-obligation in-home consultation where we’ll assess your
             windows and provide tailored recommendations.
           </p>
-          <div className="step-number">2</div>
+          <div className="step-number-two">2</div>
         </div>
         <div className="step-card">
           <img src={HandshakeIcon} alt="Handshake Icon" />
@@ -36,11 +35,10 @@ const ThreeSteps = () => {
             Our team will work with you, from finalizing designs to completing
             a flawless installation that transforms your home.
           </p>
-          <div className="step-number">3</div>
+          <div className="step-number-three">3</div>
         </div>
       </div>
       <div className="cta-buttons">
-        <button className="cta-button">Call (123) 456-7890</button>
         <button className="cta-button">Book Your Assessment</button>
       </div>
     </section>
