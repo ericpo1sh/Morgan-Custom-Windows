@@ -20,7 +20,6 @@ function Home() {
       <ServiceAreas/>
       <ThreeSteps/>
       <BookSection/>
-      <Footer/>
     </div>
   )
 }

@@ -6,12 +6,13 @@ import Gallery from "./pages/Gallery";
 import AboutUs from "./pages/About";
 import Contact from "./pages/Contact";
 import TopDescription from "./components/TopDescription";
+import Footer from "./components/Footer";
 
 function App() {
   return (
     <Router>
       <TopDescription/>
-      <Navbar />
+      <Navbar/>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/services" element={<Services />} />
@@ -19,6 +20,7 @@ function App() {
         <Route path="/about-us" element={<AboutUs />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
+      <Footer/>
     </Router>
   );
 }

@@ -1,0 +1,77 @@
+/* General Styling */
+.landing-about-section {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 650px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-intro-content-container {
+  text-align: center;
+  color: #ffffff;
+  max-width: 1000px;
+}
+
+.about-intro-content-container h1 {
+  font-family: 'Outfit', sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  margin-bottom: -40px;
+}
+
+.about-intro-content-container h2 {
+  font-family: 'Outfit', sans-serif;
+  font-size: 64px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.about-intro-content-container h3 {
+  font-family: 'Outfit', sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1024px) {
+  .about-intro-content-container {
+    padding: 0 20px;
+  }
+
+  .about-intro-content-container h2 {
+    font-size: 50px;
+    margin-top: 50px;
+  }
+
+  .about-intro-content-containerr h3 {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .landing-about-section {
+    height: auto;
+    padding: 100px 0;
+  }
+
+  .about-intro-content-container h1 {
+    font-size: 18px;
+  }
+
+  .about-intro-content-container h2 {
+    font-size: 32px;
+    margin-top: 60px;
+    margin-bottom: 30px;
+    max-width: 320px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .about-intro-content-container h3 {
+    font-size: 16px;
+  }
+}

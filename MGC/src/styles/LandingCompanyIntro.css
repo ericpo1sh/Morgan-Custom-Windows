@@ -109,8 +109,8 @@
   flex-direction: row;
 }
 
-.FourChecksIntro img {
-  margin-top: 15px;
+.FourChecksIntro svg {
+  margin-top: 10px;
 }
 
 .FourChecksIntro span p {

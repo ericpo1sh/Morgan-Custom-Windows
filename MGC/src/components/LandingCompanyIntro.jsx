@@ -1,6 +1,7 @@
 import WindowExamplePic from '../assets/WindowsExamples.png'
 import GoldCheck from '../assets/GoldenCheckmark.png'
 import '../styles/LandingCompanyIntro.css';
+import CheckBox from '../assets/CheckBox';
 
 const LandingCompanyIntro = () => {
   return (
@@ -13,10 +14,10 @@ const LandingCompanyIntro = () => {
             <p>At Morgan Custom Windows, we take pride in delivering top-quality window  solutions for both residential and commercial properties. Whether you're upgrading your home with energy-efficient designs or enhancing your  business with custom windows, our team is here to make the process  seamless and worry-free. We’re committed to craftsmanship, transparency, and customer satisfaction, ensuring every project exceeds expectations from start to finish.</p>
           </div>
           <div className='FourChecksIntro'>
-            <span><img src={GoldCheck} alt='' width={'50px'} height={'50px'}/><p>Free Estimates</p></span>
-            <span><img src={GoldCheck} alt='' width={'50px'} height={'50px'}/><p>Always On Time</p></span>
-            <span><img src={GoldCheck} alt='' width={'50px'} height={'50px'}/><p>Licensed & Insured</p></span>
-            <span><img src={GoldCheck} alt='' width={'50px'} height={'50px'}/><p>Clear Communication</p></span>
+            <span><CheckBox/><p>Free Estimates</p></span>
+            <span><CheckBox/><p>Always On Time</p></span>
+            <span><CheckBox/><p>Licensed & Insured</p></span>
+            <span><CheckBox/><p>Clear Communication</p></span>
           </div>
           <button aria-label="Book your assessment with Morgan Custom Windows" className="cta-button">BOOK YOUR ASSESSMENT</button>
         </div>

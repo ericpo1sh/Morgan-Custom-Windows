@@ -1,7 +1,7 @@
 import '../styles/ThreeSteps.css';
-import CallIcon from '../assets/CallIcon.png';
-import CalendarIcon from '../assets/CalendarIcon.png';
-import HandshakeIcon from '../assets/HandshakeIcon.png';
+import GoldCallIcon from '../assets/GoldCallIcon.jsx';
+import CalendarIcon from '../assets/CalendarIcon.jsx';
+import HandshakeIcon from '../assets/HandshakeIcon.jsx';
 
 const ThreeSteps = () => {
   return (
@@ -12,7 +12,7 @@ const ThreeSteps = () => {
       </header>
       <div className="steps-container">
         <div className="step-card">
-          <img src={CallIcon} alt="Call Icon" />
+          <GoldCallIcon/>
           <h4>Call (000) 000-0000</h4>
           <p>
           Reach out to us today to discuss your window needs and get personalized answers to any questions you have.
@@ -20,7 +20,7 @@ const ThreeSteps = () => {
           <div className="step-number-one">1</div>
         </div>
         <div className="step-card">
-          <img src={CalendarIcon} alt="Calendar Icon" />
+          <CalendarIcon/>
           <h4>Schedule an Assessment</h4>
           <p>
             Set up a no-obligation in-home consultation where we’ll assess your
@@ -29,7 +29,7 @@ const ThreeSteps = () => {
           <div className="step-number-two">2</div>
         </div>
         <div className="step-card">
-          <img src={HandshakeIcon} alt="Handshake Icon" />
+          <HandshakeIcon/>
           <h4>Meet Our Experts</h4>
           <p>
             Our team will work with you, from finalizing designs to completing
