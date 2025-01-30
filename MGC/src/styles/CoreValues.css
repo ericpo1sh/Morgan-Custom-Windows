@@ -1,0 +1,136 @@
+/* Core Values Section */
+.core-values-section {
+  background-color: #d9d9d9;
+  padding: 50px 20px;
+}
+
+.core-values-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.core-value-text-header {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header Section */
+.core-value-text-header h2 {
+  font-size: 20px;
+  color: #8d7d41;
+  font-family: 'Outfit';
+  text-transform: uppercase;
+  font-weight: 400;
+  margin-bottom: -5px;
+}
+
+.core-value-text-header h3 {
+  font-size: 40px;
+  color: #634521;
+  font-family: 'Outfit';
+  margin-top: 10px;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+
+/* Core Value Cards */
+.core-values-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.core-value {
+  background-color: #ffffff;
+  padding: 20px;
+  min-width: 250px;
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.core-value:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.core-value h4 {
+  font-size: 18px;
+  color: #8d7d41;
+  margin-bottom: 10px;
+  font-family: Outfit;
+}
+
+.core-value p {
+  font-size: 16px;
+  color: #22231f;
+  line-height: 1.5;
+  font-family: Outfit;
+}
+
+/* Image Section */
+.core-values-image {
+  grid-column: 2 / span 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.values-image {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+/* Call-To-Action Button */
+.cta-button-container {
+  text-align: center;
+  margin-top: 30px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1024px) {
+  .core-values-container {
+    grid-template-columns: 1fr;
+  }
+
+  .core-values-content {
+    grid-template-columns: 1fr;
+    margin-bottom: 10px;
+  }
+
+  .core-values-image {
+    grid-column: 1 / span 1;
+  }
+}
+
+@media screen and (max-width: 715px) {
+  .core-value-text-header h2 {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .core-value-text-header h3 {
+    font-size: 32px;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .core-value-text-header h2 {
+    font-size: 18px;
+    text-align: center;
+    max-width: 300px;
+  }
+
+  .core-value-text-header h3 {
+    font-size: 32px;
+    text-align: center;
+    max-width: 325px;
+  }
+}
