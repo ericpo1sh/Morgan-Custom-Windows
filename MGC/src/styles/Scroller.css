@@ -10,7 +10,7 @@
 .scrolling-content {
   display: inline-block;
   padding-left: 100%; /* Start outside the viewport */
-  animation: scroll 30s linear infinite; /* Adjust duration as needed */
+  animation: scroll 50s linear infinite; /* Adjust duration as needed */
 }
 
 .scrolling-content span {

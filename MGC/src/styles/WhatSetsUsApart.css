@@ -38,6 +38,8 @@
   background-color: #22231F;
   padding: 20px;
   border-radius: 10px;
+  max-width: 1300px;
+  margin: auto;
 }
 
 .feature-card {

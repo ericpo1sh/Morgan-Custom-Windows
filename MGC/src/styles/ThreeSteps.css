@@ -25,6 +25,8 @@
 .steps-container {
   display: flex;
   justify-content: space-evenly;
+  max-width: 1300px;
+  margin: auto;
   gap: 20px;
   flex-wrap: wrap;
   margin-bottom: 40px;

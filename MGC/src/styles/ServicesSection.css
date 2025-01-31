@@ -39,6 +39,8 @@
   padding: 40px;
   align-items: center;
   border-radius: 10px;
+  max-width: 1300px;
+  margin: auto;
 }
 
 .service-card {

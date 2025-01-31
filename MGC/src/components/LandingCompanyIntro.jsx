@@ -1,5 +1,4 @@
 import WindowExamplePic from '../assets/WindowsExamples.png'
-import GoldCheck from '../assets/GoldenCheckmark.png'
 import '../styles/LandingCompanyIntro.css';
 import CheckBox from '../assets/CheckBox';
 
