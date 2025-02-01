@@ -2,7 +2,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 40px;
+  padding: 50px 20px;
+  background: #22231F;
+    
 }
 
 .intro-outer-container {
@@ -10,7 +12,7 @@
   align-items: center;
   justify-content: center;
   background: #22231F;
-  padding: 30px;
+  padding: 40px;
   max-width: 1300px;
   border-radius: 10px;
 }
@@ -80,22 +82,112 @@
   margin-right: 10px;
 }
 
-
-@media screen and (max-width: 768px) {
-  .services-intro-section {
-    flex-direction: column;
-  }
-
-  .intro-left,
+@media screen and (max-width: 1385px) {
   .intro-right {
-    max-width: 100%;
+    max-width: 50%;
   }
 
   .feature-list li {
-    font-size: 14px;
+    margin-bottom: 10px;
+    font-size: 18px;
   }
 
+  .intro-left {
+    max-width: 50%;
+  }
+
+  .intro-left h3 {
+    font-size: 24px;
+  }
+
+  .intro-left p {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .intro-right {
+    max-width: 50%;
+  }
+
+  .feature-list li {
+    margin-bottom: -10px;
+    font-size: 14px;
+    margin-left: -20px;
+  }
+
+  .feature-list li svg {
+    width: 30px;
+  }
+
+  .intro-left {
+    max-width: 50%;
+  }
+
+  .intro-left h2 {
+    font-size: 16px;
+  }
+
+  .intro-left h3 {
+    font-size: 20px;
+  }
+
+  .intro-left p {
+    font-size: 14px;
+  }
+}
+
+
+@media screen and (max-width: 932px) {
   .cta-button {
+    width: 200px;
+    font-size: 14px;
+    padding: 0;
+  }
+
+  .intro-left h2 {
+    font-size: 12px;
+  }
+
+  .intro-left h3 {
+    font-size: 17px;
+  }
+
+  .intro-left p {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 730px) {
+  .intro-inner-container {
+    flex-direction: column;
     width: 100%;
+  }
+
+  .intro-left {
+    max-width: 100%;
+  }
+
+  .intro-right {
+    max-width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .intro-right .feature-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .feature-list li {
+    margin-bottom: -10px;
+    font-size: 12px;
+    margin-left: -20px;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .intro-right .feature-list {
+    grid-template-columns: 1fr;
+    
   }
 }

@@ -4,6 +4,7 @@ import ServiceAreas from "../components/ServiceAreas";
 import ServiceLandingSection from "../components/ServiceLandingSection";
 import ServicesIntroSection from "../components/ServicesIntroSection";
 import ServicesSection from "../components/ServicesSection";
+import ServicesWindowStyles from "../components/ServicesWindowStyles";
 import ThreeSteps from "../components/ThreeSteps";
 import WhatSetsUsApart from "../components/WhatSetsUsApart";
 
@@ -11,9 +12,11 @@ function Services() {
   return (
     <div>
       <ServiceLandingSection/>
+      <Scroller/>
       <ServicesIntroSection/>
-      <ServicesSection/>
+      <ServicesWindowStyles/>
       <WhatSetsUsApart/>
+      <ServicesSection/>
 
       <ServiceAreas/>
       <ThreeSteps/>

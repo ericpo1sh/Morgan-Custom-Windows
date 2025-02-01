@@ -1,0 +1,247 @@
+
+.services-title {
+  text-align: center;
+}
+
+.services-title h2 {
+  font-family: 'Outfit';
+  font-size: 20px;
+  font-weight: 400;
+  color: #8D7D41;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  margin-bottom: -30px;
+}
+
+.services-title h3 {
+  font-family: 'Outfit';
+  font-size: 40px;
+  font-weight: 500;
+  color: #634521;
+  margin-bottom: 20px;
+}
+
+.services-wrapper {
+  padding: 3% 10%;
+}
+
+.window-styles-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 40px;
+  margin-top: 50px;
+  padding: 50px 20px;
+  border-radius: 10px;
+  
+}
+
+.window-style {
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+.window-style img {
+  width: 100%;
+  border-radius: 10px;
+  display: block;
+  transition: transform 0.5s;
+}
+
+
+.window-style-overlay {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  padding: 0;
+  text-align: center;
+  font-size: 14px;
+  transition: height 0.5s;
+  color: white;
+  height: 0;
+  background: linear-gradient(transparent 10%, #22231F 75%);
+  border-radius: 0px;
+  left: 0;
+  bottom: 0;
+  overflow: hidden;
+}
+
+.window-style-overlay h4 {
+  font-weight: 600;
+  margin-bottom: 5px;
+  font-size: 34px;
+  font-family: Outfit;
+}
+
+.window-style-overlay p {
+  font-weight: 400;
+  font-size: 14px;
+  font-family: Outfit;
+  max-width: 350px;
+}
+
+.window-style-overlay a {
+  text-decoration: none;
+  font-family: Outfit;
+  background: #8D7D41;
+  color: white;
+  display: inline-block;
+  margin-top: 10px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 15px;
+  text-transform: uppercase;
+}
+
+.window-style:hover img {
+  transform: scale(1.4);
+}
+
+.window-style:hover {
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+.window-style:hover .window-style-overlay {
+  height: 100%;
+}
+
+
+@media screen and (max-width: 1580px) {
+  .window-styles-content {
+    grid-template-columns: 1fr 1fr;
+    margin-top: -20px;
+  }
+
+  .window-style-overlay {
+    transform: scale(1.3);
+  }
+}
+
+@media screen and (max-width: 1480px) {
+  .window-style-overlay {
+    transform: scale(1.2);
+  }
+}
+
+@media screen and (max-width: 1180px) {
+  .window-style-overlay {
+    transform: scale(1);
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .window-style-overlay h4, .window-style-overlay p {
+    transform: scale(0.8);
+  }
+
+  .window-style-overlay h4 {
+    margin-top: 0px;
+  }
+
+  .window-style-overlay p {
+    margin-top: -5px;
+  }
+
+  .window-style-overlay a {
+    margin-top: -5px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .services-title h3 {
+    font-size: 32px;
+  }
+
+  .window-style-overlay h4, .window-style-overlay p, .window-style-overlay a {
+    transform: scale(1.2);
+  }
+
+  .window-styles-content {
+    grid-template-columns: 1fr;
+  }
+
+  .window-style-overlay h4 {
+    margin-top: 0px;
+  }
+
+  .window-style-overlay p {
+    margin-top: 30px;
+  }
+
+  .window-style-overlay a {
+    margin-top: 30px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .window-style-overlay h4, .window-style-overlay p{
+    transform: scale(1.0);
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .window-style-overlay h4, .window-style-overlay p{
+    transform: scale(0.8);
+  }
+
+  .services-title h3 {
+    font-size: 32px;
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+  }
+
+  .services-title h2 {
+    font-size: 18px;
+  }
+
+  .window-style-overlay h4 {
+    margin-top: 0px;
+  }
+
+  .window-style-overlay p {
+    margin-top: 0px;
+  }
+
+  .window-style-overlay a {
+    margin-top: 0px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .window-style-overlay h4, .window-style-overlay p{
+    transform: scale(0.7);
+  }
+
+  .window-style-overlay a {
+    transform: scale(0.9);
+  }
+
+  .window-style-overlay h4 {
+    margin-top: 0px;
+  }
+
+  .window-style-overlay p {
+    margin-top: -10px;
+    width: 340px;
+  }
+
+  .window-style-overlay a {
+    margin-top: -10px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .window-style-overlay h4, .window-style-overlay p{
+    transform: scale(0.6);
+  }
+
+  .window-style-overlay h4 {
+    margin-top: 0px;
+    width: 400px;
+  }
+}

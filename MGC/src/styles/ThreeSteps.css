@@ -26,8 +26,8 @@
   display: flex;
   justify-content: space-evenly;
   max-width: 1300px;
-  margin: auto;
   gap: 20px;
+  margin: auto;
   flex-wrap: wrap;
   margin-bottom: 40px;
   background-color: #22231F;

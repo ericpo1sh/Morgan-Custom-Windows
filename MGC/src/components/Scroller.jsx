@@ -14,6 +14,7 @@ const Scroller = () => {
         <span>Garden Windows</span>
         <span>Energy-Efficient Windows</span>
         <span>Specialty Windows</span>
+        <span>Storefront Windows</span>
       </div>
     </div>
   )

@@ -16,22 +16,22 @@ const ServicesIntroSection = () => {
           <div className="intro-right">
             <ul className="feature-list">
               <li>
-                <CheckBox /> Free Estimates
+                <CheckBox />Free Estimates
               </li>
               <li>
-                <CheckBox /> No-Surprise Guarantee
+                <CheckBox />No-Surprise Guarantee
               </li>
               <li>
-                <CheckBox /> Clear, Transparent, Daily Communication
+                <CheckBox />Daily Communication
               </li>
               <li>
-                <CheckBox /> Always On Time
+                <CheckBox />Always On Time
               </li>
               <li>
-                <CheckBox /> Locally Owned and Operated
+                <CheckBox />Locally Owned and Operated
               </li>
               <li>
-                <CheckBox /> Custom Window Shapes and Sizes
+                <CheckBox />Custom Shapes and Sizes
               </li>
             </ul>
             <button className="cta-button">BOOK YOUR ASSESSMENT</button>
