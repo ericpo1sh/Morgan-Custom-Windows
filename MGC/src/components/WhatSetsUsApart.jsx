@@ -7,7 +7,7 @@ const WhatSetsUsApart = () => {
         <h2>The Features That Set Our Tulsa Windows Apart</h2>
         <h3>What Makes Our Windows the Best Choice for Tulsa</h3>
         <p>
-          At Morgan Windows, we believe in delivering nothing less than the best. Our custom-made windows are
+          At Morgan Custom Windows, we believe in delivering nothing less than the best. Our custom-made windows are
           designed with both quality and efficiency in mind, ensuring they not only elevate the look of your
           home but also provide exceptional performance. Here’s what makes our windows stand out:
         </p>

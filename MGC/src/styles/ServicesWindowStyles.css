@@ -1,4 +1,3 @@
-
 .services-title {
   text-align: center;
 }
@@ -29,10 +28,12 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 40px;
-  margin-top: 50px;
+  margin-top: 0px;
   padding: 50px 20px;
   border-radius: 10px;
-  
+  max-width: 1400px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .window-style {
@@ -43,7 +44,6 @@
 
 .window-style img {
   width: 100%;
-  border-radius: 10px;
   display: block;
   transition: transform 0.5s;
 }
@@ -62,7 +62,7 @@
   transition: height 0.5s;
   color: white;
   height: 0;
-  background: linear-gradient(transparent 10%, #22231F 75%);
+  background: linear-gradient(rgba(34, 35, 31, .1) 1%, #22231F 75%);
   border-radius: 0px;
   left: 0;
   bottom: 0;
@@ -83,6 +83,11 @@
   max-width: 350px;
 }
 
+.window-style-overlay a:hover {
+  transform: scale(1.05);
+  background-color: #634521;
+}
+
 .window-style-overlay a {
   text-decoration: none;
   font-family: Outfit;
@@ -94,10 +99,11 @@
   border-radius: 5px;
   font-size: 15px;
   text-transform: uppercase;
+  transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
 .window-style:hover img {
-  transform: scale(1.4);
+  transform: scale(1.2);
 }
 
 .window-style:hover {
@@ -157,6 +163,10 @@
 
   .window-style-overlay h4, .window-style-overlay p, .window-style-overlay a {
     transform: scale(1.2);
+  }
+
+  .window-style-overlay a:hover {
+    transform: scale(1.3);
   }
 
   .window-styles-content {

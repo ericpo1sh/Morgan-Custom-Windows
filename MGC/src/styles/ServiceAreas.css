@@ -76,6 +76,7 @@
   font-family: 'Outfit', sans-serif;
   font-size: 18px;
   font-weight: 600;
+  z-index: 10;
   color: #fff;
   background-color: #8D7D41;
   border: none;

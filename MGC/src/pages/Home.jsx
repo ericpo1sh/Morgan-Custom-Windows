@@ -2,6 +2,7 @@ import BookSection from "../components/BookSection";
 import Footer from "../components/Footer";
 import HomeLandingSection from "../components/HomeLandingSection";
 import LandingCompanyIntro from "../components/LandingCompanyIntro";
+import ReviewsSection from "../components/ReviewsSection";
 import Scroller from "../components/Scroller";
 import ServiceAreas from "../components/ServiceAreas";
 import ServicesSection from "../components/ServicesSection";
@@ -19,6 +20,7 @@ function Home() {
       <WhatSetsUsApart/>
       <ServiceAreas/>
       <ThreeSteps/>
+      <ReviewsSection/>
       <BookSection/>
     </div>
   )
