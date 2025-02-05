@@ -2,7 +2,7 @@ import '../styles/BookSection.css';
 
 const BookSection = () => {
   return (
-    <section className="book-section">
+    <section className="book-section" id='Book'>
       <h2>Book Your <span className="highlight">FREE</span> Assessment</h2>
       <form className="book-form">
         <div className='form-container'>

@@ -6,7 +6,7 @@
   background-color: #634521;
   padding: 0.25rem 2rem;
   position: relative;
-  z-index: 10;
+  z-index: 999;
 }
 
 .logo img {
@@ -48,7 +48,7 @@
   .navbar-container {
     position: sticky;
     top: 0;
-    z-index: 10;
+    z-index: 999;
   }
 
   .nav-mob-open {

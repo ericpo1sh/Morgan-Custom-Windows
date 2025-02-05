@@ -19,14 +19,6 @@ const Footer = () => {
         <div className="footer-column">
         <hr/>
           <ul>
-            <li>(000) 000-0000</li>
-            <li>info@morganwindows.com</li>
-            <li>123 Oak Leaf Dr, Tulsa OK 74131</li>
-          </ul>
-        </div>
-        <div className="footer-column">
-        <hr/>
-          <ul>
             <li>Monday–Friday: 8 AM–6 PM</li>
             <li>Saturday: 8 AM–6 PM</li>
             <li>Sunday: Closed</li>
@@ -36,9 +28,15 @@ const Footer = () => {
         <hr/>
           <p>Connect With Us!</p>
           <div className="social-icons">
-          <FacebookIcon/>
-          <MailIcon/>
-          <PhoneIcon/>
+            <a href="https://facebook.com/morgancustomwindows" target="_blank" rel="noopener noreferrer">
+              <FacebookIcon />
+            </a>
+            <a href="mailto:cam@morgancustomwindows.com">
+              <MailIcon />
+            </a>
+            <a href="tel:0000000000">
+              <PhoneIcon />
+            </a>
           </div>
         </div>
       </div>

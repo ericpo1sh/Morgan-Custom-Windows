@@ -1,4 +1,5 @@
 import BookSection from "../components/BookSection";
+import ReviewsSection from "../components/ReviewsSection";
 import Scroller from "../components/Scroller";
 import ServiceAreas from "../components/ServiceAreas";
 import ServiceLandingSection from "../components/ServiceLandingSection";
@@ -17,10 +18,9 @@ function Services() {
       <ServicesWindowStyles/>
       <WhatSetsUsApart/>
       <ServicesSection/>
-
       <ServiceAreas/>
       <ThreeSteps/>
-
+      <ReviewsSection/>
       <BookSection/>
     </div>
   )

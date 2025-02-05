@@ -1,5 +1,17 @@
+import BookSection from "../components/BookSection";
+import ContactLandingSection from "../components/ContactLandingSection";
+import ContactQuickLinks from "../components/ContactQuickLinks";
+import Scroller from "../components/Scroller";
+
 function Contact() {
-  return <h1>Contact</h1>;
+  return (
+    <div>
+      <ContactLandingSection/>
+      <ContactQuickLinks/>
+      <Scroller/>
+      <BookSection/>
+    </div>
+  )
 }
 
 export default Contact;
