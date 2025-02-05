@@ -7,8 +7,8 @@ function Contact() {
   return (
     <div>
       <ContactLandingSection/>
-      <ContactQuickLinks/>
       <Scroller/>
+      <ContactQuickLinks/>
       <BookSection/>
     </div>
   )
