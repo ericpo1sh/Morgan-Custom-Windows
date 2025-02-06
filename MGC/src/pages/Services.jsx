@@ -11,7 +11,7 @@ import WhatSetsUsApart from "../components/WhatSetsUsApart";
 
 function Services() {
   return (
-    <div>
+    <>
       <ServiceLandingSection/>
       <Scroller/>
       <ServicesIntroSection/>
@@ -22,7 +22,7 @@ function Services() {
       <ThreeSteps/>
       <ReviewsSection/>
       <BookSection/>
-    </div>
+    </>
   )
 }
 

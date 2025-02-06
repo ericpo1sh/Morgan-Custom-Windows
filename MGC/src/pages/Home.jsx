@@ -12,7 +12,7 @@ import '../styles/Home.css'
 
 function Home() {
   return (
-    <div className="home">
+    <>
       <HomeLandingSection/>
       <Scroller/>
       <LandingCompanyIntro/>
@@ -22,7 +22,7 @@ function Home() {
       <ThreeSteps/>
       <ReviewsSection/>
       <BookSection/>
-    </div>
+    </>
   )
 }
 export default Home;

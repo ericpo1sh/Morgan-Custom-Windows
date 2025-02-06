@@ -1,5 +1,13 @@
+import GalleryLandingSection from "../components/GalleryLandingSection";
+import Scroller from "../components/Scroller";
+
 function Gallery() {
-  return <h1>Welcome to Morgan Custom Windows Gallery</h1>;
+  return (
+    <>
+      <GalleryLandingSection/>
+      <Scroller/>
+    </>
+  )
 }
 
 export default Gallery;

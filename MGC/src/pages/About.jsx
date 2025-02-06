@@ -9,7 +9,7 @@ import ThreeSteps from "../components/ThreeSteps";
 
 function About() {
   return (
-    <div>
+    <>
       <LandingAboutSection/>
       <Scroller/>
       <MeetCameron/>
@@ -18,7 +18,7 @@ function About() {
       <ThreeSteps/>
       <ReviewsSection/>
       <BookSection/>
-    </div>
+    </>
   )
 }
 

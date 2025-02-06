@@ -5,12 +5,12 @@ import Scroller from "../components/Scroller";
 
 function Contact() {
   return (
-    <div>
+    <>
       <ContactLandingSection/>
       <Scroller/>
       <ContactQuickLinks/>
       <BookSection/>
-    </div>
+    </>
   )
 }
 

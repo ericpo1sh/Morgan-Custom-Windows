@@ -27,8 +27,8 @@
   text-decoration: none;
   color: #ffffff;
   font-family: 'Outfit';
+  font-weight: 400;
   font-size: 24px;
-  font-weight: 500;
 }
 
 .navbar a.active {

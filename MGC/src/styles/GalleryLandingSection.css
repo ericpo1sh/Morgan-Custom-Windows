@@ -1,0 +1,73 @@
+/* General Styling */
+.landing-gallery-section {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 550px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gallery-intro-content-container {
+  text-align: center;
+  color: #ffffff;
+  max-width: 1000px;
+}
+
+.gallery-intro-content-container h1 {
+  font-family: 'Outfit', sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  margin-bottom: -40px;
+}
+
+.gallery-intro-content-container h2 {
+  font-family: 'Outfit', sans-serif;
+  font-size: 64px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.gallery-intro-content-container h3 {
+  font-family: 'Outfit', sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1024px) {
+  .gallery-intro-content-container {
+    padding: 0 20px;
+  }
+
+  .gallery-intro-content-container h2 {
+    font-size: 50px;
+    margin-top: 50px;
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+  .landing-gallery-section {
+    height: auto;
+    padding: 100px 0;
+  }
+
+  .gallery-intro-content-container h1 {
+    font-size: 18px;
+  }
+
+  .gallery-intro-content-container h2 {
+    font-size: 32px;
+    margin-top: 60px;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .gallery-intro-content-container h3 {
+    font-size: 16px;
+  }
+}
