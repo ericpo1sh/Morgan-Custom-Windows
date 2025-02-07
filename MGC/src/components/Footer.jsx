@@ -41,7 +41,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="footer-bottom">
-        <p>© Copyright 2025 | Morgan Custom Windows | All Rights Reserved | <a href="/privacy">Privacy & Accessibility</a></p>
+        <p>&copy; {new Date().getFullYear()} Morgan Custom Windows | All Rights Reserved | <a href="/privacy">Privacy & Accessibility</a></p>
       </div>
     </footer>
   );

@@ -2,8 +2,8 @@ import '../styles/Scroller.css'
 
 const Scroller = () => {
   return (
-    <div class="scrolling-container">
-      <div class="scrolling-content">
+    <div className="scrolling-container">
+      <div className="scrolling-content">
         <span>Double-Hung Windows</span>
         <span>Casement Windows</span>
         <span>Sliding Windows</span>
@@ -15,6 +15,8 @@ const Scroller = () => {
         <span>Energy-Efficient Windows</span>
         <span>Specialty Windows</span>
         <span>Storefront Windows</span>
+        <span>Commercial Windows</span>
+        <span>Residential Windows</span>
       </div>
     </div>
   )

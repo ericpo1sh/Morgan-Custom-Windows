@@ -188,6 +188,9 @@
 @media screen and (max-width: 580px) {
   .intro-right .feature-list {
     grid-template-columns: 1fr;
-    
+  }
+
+  .intro-outer-container {
+    padding: 10px;
   }
 }
