@@ -2,6 +2,7 @@ import '../styles/Footer.css';
 import FacebookIcon from '../assets/FacebookIcon';
 import MailIcon from '../assets/MailIcon';
 import PhoneIcon from '../assets/PhoneIcon';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
@@ -10,15 +11,15 @@ const Footer = () => {
         <div className="footer-column">
         <hr/>
           <ul>
-            <li><a href='/'>Home</a></li>
-            <li><a href='/services'>Services</a></li>
-            <li><a href='/gallery'>Gallery</a></li>
-            <li><a href='/faq'>FAQ</a></li>
+            <li><Link to='/'>Home</Link></li>
+            <li><Link to='/services'>Services</Link></li>
+            <li><Link to='/gallery'>Gallery</Link></li>
+            <li><Link to='/faq'>FAQ</Link></li>
           </ul>
           <ul>
-            <li><a href='/about-us'>About Us</a></li>
-            <li><a href='/contact'>Contact</a></li>
-            <li><a href='/privacy'>Privacy</a></li>
+            <li><Link to='/about-us'>About Us</Link></li>
+            <li><Link to='/contact'>Contact</Link></li>
+            <li><Link to='/privacy'>Privacy</Link></li>
           </ul>
         </div>
         <div className="footer-column">
@@ -46,7 +47,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="footer-bottom">
-        <p>&copy; {new Date().getFullYear()} Morgan Custom Windows | All Rights Reserved | <a href="/privacy">Privacy & Accessibility</a></p>
+        <p>&copy; {new Date().getFullYear()} Morgan Custom Windows | All Rights Reserved | <Link to="/privacy">Privacy & Accessibility</Link></p>
       </div>
     </footer>
   );
