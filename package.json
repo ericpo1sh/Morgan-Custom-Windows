@@ -1,6 +1,7 @@
 {
   "name": "mgc",
   "private": true,
+  "homepage": "https://ericpo1sh.github.io/Morgan-Custom-Windows",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
