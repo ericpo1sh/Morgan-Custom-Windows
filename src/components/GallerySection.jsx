@@ -1,43 +1,50 @@
 import React, { useState, useEffect } from 'react';
 import '../styles/GallerySection.css';
+import InterriorDoubleHungWindow from '../assets/InterriorDoubleHungWindow.jpg';
+import InterriorCustomWindow from '../assets/InterriorCustomWindow.jpg';
+import InterriorDiningRoomWindow from '../assets/InterriorDiningRoomWindow.jpg';
+import InterriorTeaTableWindows from '../assets/InterriorTeaTableWindows.jpg';
+import ExterriorDiningRoomWindow from '../assets/ExterriorDiningRoomWindow.jpg';
+import ExterriorViewOfClientHouse from '../assets/ExterriorViewOfClientHouse.jpg';
+import InterriorCloseUpViewOfWindow from '../assets/InterriorCloseUpViewOfWindow.jpg';
 
 const GallerySection = () => {
   const [currentPage, setCurrentPage] = useState(1);
   const [selectedImage, setSelectedImage] = useState(null);
   const [imagesPerPage, setImagesPerPage] = useState(6);
 
+  // Updated gallery data with imported image paths
   const galleryData = [
     {
-      "path": "src/assets/InterriorDoubleHungWindow.jpg",
-      "alt": "Modern Double Hung Window Installation - Interrior"
+      path: InterriorDoubleHungWindow,
+      alt: "Modern Double Hung Window Installation - Interrior",
     },
     {
-      "path": "src/assets/InterriorCustomWindow.jpg",
-      "alt": "Elegant Window Design for Homes - Interrior"
+      path: InterriorCustomWindow,
+      alt: "Elegant Window Design for Homes - Interrior",
     },
     {
-      "path": "src/assets/InterriorDiningRoomWindow.jpg",
-      "alt": "Beautiful Dining Room Window - Interrior"
+      path: InterriorDiningRoomWindow,
+      alt: "Beautiful Dining Room Window - Interrior",
     },
     {
-      "path": "src/assets/InterriorTeaTableWindows.jpg",
-      "alt": "Custom Window Design - Interrior"
+      path: InterriorTeaTableWindows,
+      alt: "Custom Window Design - Interrior",
     },
     {
-      "path": "src/assets/ExterriorDiningRoomWindow.jpg",
-      "alt": "Custom Window Design - Exterrior"
+      path: ExterriorDiningRoomWindow,
+      alt: "Custom Window Design - Exterrior",
     },
     {
-      "path": "src/assets/ExterriorViewOfClientHouse.jpg",
-      "alt": "Custom Window Replacement - Exterrior"
+      path: ExterriorViewOfClientHouse,
+      alt: "Custom Window Replacement - Exterrior",
     },
     {
-      "path": "src/assets/InterriorCloseUpViewOfWindow.jpg",
-      "alt": "Close Up Of New Intallation - Interrior View"
-    }
-  ]
+      path: InterriorCloseUpViewOfWindow,
+      alt: "Close Up Of New Installation - Interrior View",
+    },
+  ];
 
-  // Function to update images per page based on screen width
   const updateImagesPerPage = () => {
     if (window.innerWidth <= 768) {
       setImagesPerPage(2);
@@ -48,7 +55,6 @@ const GallerySection = () => {
     }
   };
 
-  // Run on mount and listen for screen resizing
   useEffect(() => {
     updateImagesPerPage();
     window.addEventListener('resize', updateImagesPerPage);
