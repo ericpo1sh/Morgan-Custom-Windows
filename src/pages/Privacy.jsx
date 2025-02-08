@@ -81,7 +81,7 @@ const Privacy = () => {
             If you have any questions about our Privacy Policy, please reach out to us at:
           </p>
           <p><strong>Email:</strong> <a href="mailto:cam@morgancustomwindows.com">cam@morgancustomwindows.com</a></p>
-          <p><strong>Phone:</strong> <a href="tel:0000000000">000-000-0000</a></p>
+          <p><strong>Phone:</strong> <a href="tel:+19182023996">(918) 202-3996</a></p>
         </div>
       </section>
     </>

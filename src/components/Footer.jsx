@@ -10,10 +10,15 @@ const Footer = () => {
         <div className="footer-column">
         <hr/>
           <ul>
+            <li><a href='/'>Home</a></li>
             <li><a href='/services'>Services</a></li>
             <li><a href='/gallery'>Gallery</a></li>
+            <li><a href='/faq'>FAQ</a></li>
+          </ul>
+          <ul>
             <li><a href='/about-us'>About Us</a></li>
             <li><a href='/contact'>Contact</a></li>
+            <li><a href='/privacy'>Privacy</a></li>
           </ul>
         </div>
         <div className="footer-column">
@@ -28,13 +33,13 @@ const Footer = () => {
         <hr/>
           <p>Connect With Us!</p>
           <div className="social-icons">
-            <a href="https://facebook.com/morgancustomwindows" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.facebook.com/people/Morgan-Custom-Windows/61572983758335/" target="_blank" rel="noopener noreferrer">
               <FacebookIcon />
             </a>
             <a href="mailto:cam@morgancustomwindows.com">
               <MailIcon />
             </a>
-            <a href="tel:0000000000">
+            <a href="tel:+19182023996">
               <PhoneIcon />
             </a>
           </div>

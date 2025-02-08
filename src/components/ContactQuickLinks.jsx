@@ -28,7 +28,7 @@ const ContactQuickLinks = () => {
           <hr />
           <div className="social-icons">
             <a
-              href="https://facebook.com/morgancustomwindows"
+              href="https://www.facebook.com/people/Morgan-Custom-Windows/61572983758335/"
               target="_blank"
               rel="noopener noreferrer"
               className="social-link"
@@ -44,7 +44,7 @@ const ContactQuickLinks = () => {
               <img src={GoldMailIcon} alt="Email Icon" />
             </a>
             <a
-              href="tel:0000000000"
+              href="tel:+19182023996"
               className="social-link"
               aria-label="Call us"
             >
