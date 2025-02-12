@@ -22,7 +22,7 @@ const ServiceAreas = () => {
             home.
           </p>
           <div className='cta-container'>
-            <button className="cta-button">BOOK YOUR ASSESSMENT</button>
+            <a className="cta-button" aria-label='Book your assessment with Morgan Custom Windows' title="Book your assessment with Morgan Custom Windows" href='/contact/'>Book Your Assessment</a>
           </div>
         </div>
       </div>

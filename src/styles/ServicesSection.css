@@ -101,7 +101,11 @@
 
   .service-card {
     flex: 1 1 100%;
-    margin-bottom: 20px;
   }
 }
 
+@media screen and (max-width: 400px) {
+  .services-cards {
+    padding: 20px;
+  }
+}

@@ -18,7 +18,7 @@ const LandingCompanyIntro = () => {
             <span><CheckBox/><p>Licensed & Insured</p></span>
             <span><CheckBox/><p>Clear Communication</p></span>
           </div>
-          <button aria-label="Book your assessment with Morgan Custom Windows" className="cta-button">BOOK YOUR ASSESSMENT</button>
+          <a title="Book your assessment with Morgan Custom Windows" aria-label='Book your assessment with Morgan Custom Windows' className="cta-button" href='/contact/'>Book Your Assessment</a>
         </div>
         <div className='ExamplePicFrame'>
           <img alt='Example Of Our Tulsa High Quality Windows' src={WindowExamplePic}/>

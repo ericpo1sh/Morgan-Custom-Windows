@@ -39,16 +39,18 @@
 }
 
 .cta-button {
-  width: 300px;
-  height: 60px;
   color: #fff;
-  font-size: 22px;
+  font-size: 25px;
   font-weight: 600;
-  border: 2px solid #FFF;
   font-family: 'Outfit';
   background: #8D7D41;
   transition: 1s ease;
   cursor: pointer;
+  padding: 20px 30px;
+  text-decoration: none;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
 }
 
 .cta-button:hover {
@@ -136,6 +138,9 @@
     font-weight: 400;
   }
   
+  .cta-button {
+    font-size: 18px;
+  }
 }
 
 @media screen and (max-width: 535px) {
@@ -178,9 +183,5 @@
     font-weight: 400;
     margin-bottom: 40px;
   }
-  
-  .cta-button {
-    width: 250px;
-    font-size: 18px;
-  }
+
 }

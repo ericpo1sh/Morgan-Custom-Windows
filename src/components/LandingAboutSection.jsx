@@ -9,7 +9,7 @@ const LandingAboutSection = () => {
       <div className="about-intro-content-container">
         <h1>Custom Window Replacements for the Tulsa Metropolitan Area</h1>
         <h2>About Morgan Custom Windows</h2>
-        <h3>See Why Countless Homeowners Trust Us for Quality Custom Windows</h3>
+        <p>See Why Countless Homeowners Trust Us for Quality Custom Windows</p>
         <button className="cta-button">BOOK YOUR ASSESSMENT</button>
       </div>
     </section>

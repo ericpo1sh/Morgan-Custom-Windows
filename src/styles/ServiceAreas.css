@@ -71,25 +71,6 @@
   justify-self: center;
 }
 
-.cta-button {
-  padding: 15px 30px;
-  font-family: 'Outfit', sans-serif;
-  font-size: 18px;
-  font-weight: 600;
-  z-index: 10;
-  color: #fff;
-  background-color: #8D7D41;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: transform 0.3s ease, background-color 0.3s ease;
-}
-
-.cta-button:hover {
-  transform: scale(1.05);
-  background-color: #634521;
-}
-
 /* Responsive Design */
 @media screen and (max-width: 768px) {
   .service-areas-container {
@@ -130,9 +111,5 @@
   
   .content-container p {
     font-size: 18px;
-  }
-
-  .cta-button {
-    padding: 0;
   }
 }

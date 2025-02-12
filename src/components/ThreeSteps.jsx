@@ -39,7 +39,7 @@ const ThreeSteps = () => {
         </div>
       </div>
       <div className="cta-buttons">
-        <button className="cta-button">Book Your Assessment</button>
+        <a className="cta-button" aria-label='Book your assessment with Morgan Custom Windows' title="Book your assessment with Morgan Custom Windows" href='/contact/'>Book Your Assessment</a>
       </div>
     </section>
   );

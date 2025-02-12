@@ -83,6 +83,9 @@
   color: rgba(34, 35, 31, 0.25);
   z-index: 1;
   user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none; 
+  -ms-user-select: none;
 }
 
 .step-number-two {
@@ -95,6 +98,9 @@
   color: rgba(34, 35, 31, 0.25);
   z-index: 1;
   user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none; 
+  -ms-user-select: none;
 }
 
 .step-number-three {
@@ -107,30 +113,15 @@
   color: rgba(34, 35, 31, 0.25);
   user-select: none;
   z-index: 1;
+  -webkit-user-select: none;
+  -moz-user-select: none; 
+  -ms-user-select: none;
 }
 
 .cta-buttons {
   display: flex;
   justify-content: center;
   gap: 20px;
-}
-
-.cta-button {
-  padding: 15px 30px;
-  font-family: 'Outfit', sans-serif;
-  font-size: 18px;
-  font-weight: 600;
-  color: #fff;
-  background-color: #8D7D41;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: transform 0.3s ease, background-color 0.3s ease;
-}
-
-.cta-button:hover {
-  transform: scale(1.05);
-  background-color: #634521;
 }
 
 /* Responsive Design */
@@ -147,11 +138,6 @@
 
   .step-card p {
     font-size: 21px;
-  }
-
-  .cta-button {
-    width: 100%;
-    max-width: 300px;
   }
 }
 
