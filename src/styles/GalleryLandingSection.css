@@ -33,7 +33,27 @@
   font-family: 'Outfit', sans-serif;
   font-size: 24px;
   font-weight: 400;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
+}
+
+.cta-button {
+  color: #fff;
+  font-size: 25px;
+  font-weight: 600;
+  font-family: 'Outfit';
+  background: #8D7D41;
+  transition: 1s ease;
+  cursor: pointer;
+  padding: 20px 30px;
+  text-decoration: none;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+}
+
+.cta-button:hover {
+  transform: scale(1.05);
+  transition: 1s ease;
 }
 
 /* Responsive Design */
@@ -69,5 +89,11 @@
 
   .gallery-intro-content-container h3 {
     font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 615px) {
+  .cta-button {
+    font-size: 18px;
   }
 }

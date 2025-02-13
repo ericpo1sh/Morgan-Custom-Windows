@@ -17,31 +17,31 @@ const GallerySection = () => {
   const galleryData = [
     {
       path: InterriorDoubleHungWindow,
-      alt: "Modern Double Hung Window Installation - Interrior",
+      alt: "Modern Double Hung Window Installation - Interior",
     },
     {
       path: InterriorCustomWindow,
-      alt: "Elegant Window Design for Homes - Interrior",
+      alt: "Elegant Window Design for Homes - Interior",
     },
     {
       path: InterriorDiningRoomWindow,
-      alt: "Beautiful Dining Room Window - Interrior",
+      alt: "Beautiful Dining Room Window - Interior",
     },
     {
       path: InterriorTeaTableWindows,
-      alt: "Custom Window Design - Interrior",
+      alt: "Custom Window Design - Interior",
     },
     {
       path: ExterriorDiningRoomWindow,
-      alt: "Custom Window Design - Exterrior",
+      alt: "Custom Window Design - Exterior",
     },
     {
       path: ExterriorViewOfClientHouse,
-      alt: "Custom Window Replacement - Exterrior",
+      alt: "Custom Window Replacement - Exterior",
     },
     {
       path: InterriorCloseUpViewOfWindow,
-      alt: "Close Up Of New Installation - Interrior View",
+      alt: "Close Up Of New Installation - Interior View",
     },
   ];
 

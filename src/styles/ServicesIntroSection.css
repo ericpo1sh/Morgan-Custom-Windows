@@ -82,6 +82,26 @@
   margin-right: 10px;
 }
 
+.services-intro-cta-button {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  font-family: 'Outfit';
+  background: #8D7D41;
+  transition: 1s ease;
+  cursor: pointer;
+  padding: 20px 30px;
+  text-decoration: none;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+}
+
+.services-intro-cta-button:hover {
+  transform: scale(1.05);
+  transition: 1s ease;
+}
+
 @media screen and (max-width: 1385px) {
   .intro-right {
     max-width: 50%;
@@ -133,7 +153,11 @@
   }
 
   .intro-left p {
-    font-size: 14px;
+    font-size: 16px;
+  }
+
+  .services-intro-cta-button {
+  font-size: 16px;
   }
 }
 
@@ -165,6 +189,12 @@
   }
 }
 
+@media screen and (max-width:580px) {
+  .feature-list {
+    margin-top: -20px;
+  }
+}
+
 @media screen and (max-width: 580px) {
   .intro-right .feature-list {
     grid-template-columns: 1fr;
@@ -173,4 +203,9 @@
   .intro-outer-container {
     padding: 10px;
   }
+  .services-intro-cta-button {
+    font-size: 16px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    }
 }

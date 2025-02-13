@@ -11,6 +11,7 @@
   width: 90%;
   justify-content: space-between;
   flex-wrap: wrap-reverse;
+  max-width: 1500px;
 }
 
 .HomePageLeftModule {

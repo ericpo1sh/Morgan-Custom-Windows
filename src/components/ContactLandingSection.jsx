@@ -10,7 +10,7 @@ const ContactLandingSection = () => {
         <h1>Custom Window Replacement Services in Tulsa</h1>
         <h2>Contact Morgan Custom Windows</h2>
         <h3>Reach Out Today for Tailored Window Solutions and Expert Guidance</h3>
-        <a href="#Book" id='ContactButton' className="cta-button">BOOK YOUR ASSESSMENT</a>
+        <a href="#Book" id='ContactButton' className="cta-button" aria-label='Book your assessment with Morgan Custom Windows' title="Book your assessment with Morgan Custom Windows">Book Your Assessment</a>
       </div>
     </section>
   )

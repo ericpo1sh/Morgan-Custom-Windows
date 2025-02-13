@@ -10,7 +10,7 @@ const GalleryLandingSection = () => {
         <h1>Premium Custom Window Installations and Replacements in Tulsa, OK</h1>
         <h2>Morgan Custom Windows Gallery</h2>
         <h3>Discover the Beauty of Our Tailored Window Solutions</h3>
-        <button className="cta-button">BOOK YOUR ASSESSMENT</button>
+        <a className="cta-button" href='/contact/' aria-label='Book your assessment with Morgan Custom Windows' title="Book your assessment with Morgan Custom Windows">Book Your Assessment</a>
       </div>
     </section>
   )

@@ -40,6 +40,26 @@
   text-decoration: none;
 }
 
+.cta-button {
+  color: #fff;
+  font-size: 25px;
+  font-weight: 600;
+  font-family: 'Outfit';
+  background: #8D7D41;
+  transition: 1s ease;
+  cursor: pointer;
+  padding: 20px 30px;
+  text-decoration: none;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+}
+
+.cta-button:hover {
+  transform: scale(1.05);
+  transition: 1s ease;
+}
+
 /* Responsive Design */
 @media screen and (max-width: 1024px) {
   .contact-intro-content-container {
@@ -79,5 +99,11 @@
 
   .contact-intro-content-container h3 {
     font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 615px) {
+  .cta-button {
+    font-size: 18px;
   }
 }

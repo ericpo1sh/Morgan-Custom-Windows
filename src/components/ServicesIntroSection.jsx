@@ -34,7 +34,7 @@ const ServicesIntroSection = () => {
                 <CheckBox />Custom Shapes and Sizes
               </li>
             </ul>
-            <button className="cta-button">BOOK YOUR ASSESSMENT</button>
+            <a className="services-intro-cta-button" href='/contact/' aria-label='Book your assessment with Morgan Custom Windows' title="Book your assessment with Morgan Custom Windows">Book Your Assessment</a>
           </div>
         </div>
       </div>

@@ -50,7 +50,7 @@ const CoreValues = () => {
         </div>
       </div>
       <div className="cta-button-container">
-        <button className="cta-button">BOOK YOUR ASSESSMENT</button>
+        <a className="cta-button" href='/contact/' aria-label='Book your assessment with Morgan Custom Windows' title="Book your assessment with Morgan Custom Windows">Book Your Assessment</a>
       </div>
     </section>
   );
