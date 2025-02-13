@@ -9,9 +9,10 @@ const Footer = () => {
       <div className="footer-container">
         <div className="footer-column">
         <hr/>
+        <div className='links-container'>
           <ul>
             <li><a href='/'>Home</a></li>
-            <li><a to='/services/'>Services</a></li>
+            <li><a href='/services/'>Services</a></li>
             <li><a href='/gallery/'>Gallery</a></li>
             <li><a href='/faq/'>FAQ</a></li>
           </ul>
@@ -20,6 +21,7 @@ const Footer = () => {
             <li><a href='/contact/'>Contact</a></li>
             <li><a href='/privacy/'>Privacy</a></li>
           </ul>
+        </div>
         </div>
         <div className="footer-column">
         <hr/>

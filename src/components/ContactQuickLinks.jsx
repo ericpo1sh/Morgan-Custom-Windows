@@ -16,9 +16,9 @@ const ContactQuickLinks = () => {
           <img src={ClockIcon} alt="Operating Hours Icon" />
           <p className="quick-link-title">Hours</p>
           <hr />
-          <p className='hours-text'>Monday–Friday: 8 AM–6 PM</p>
-          <p className='hours-text'>Saturday: 8 AM–6 PM</p>
-          <p className='hours-text'>Sunday: Closed</p>
+          <p className="hours-text">Monday–Friday: 8 AM–6 PM</p>
+          <p className="hours-text">Saturday: 8 AM–6 PM</p>
+          <p className="hours-text">Sunday: Closed</p>
         </div>
 
         {/* Connect With Us Section */}
@@ -27,27 +27,15 @@ const ContactQuickLinks = () => {
           <p className="quick-link-title">Connect With Us</p>
           <hr />
           <div className="social-icons">
-            <a
-              href="https://www.facebook.com/people/Morgan-Custom-Windows/61572983758335/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="social-link"
-              aria-label="Connect with us on Facebook"
-            >
+            <a href="https://www.facebook.com/people/Morgan-Custom-Windows/61572983758335/"
+              target="_blank" rel="noopener noreferrer"
+              className="social-link" aria-label="Connect with us on Facebook">
               <GoldFacebookIcon />
             </a>
-            <a
-              href="mailto:cam@morgancustomwindows.com"
-              className="social-link"
-              aria-label="Send us an email"
-            >
+            <a href="mailto:cam@morgancustomwindows.com" className="social-link" aria-label="Send us an email">
               <img src={GoldMailIcon} alt="Email Icon" />
             </a>
-            <a
-              href="tel:+19182023996"
-              className="social-link"
-              aria-label="Call us"
-            >
+            <a href="tel:+19182023996" className="social-link" aria-label="Call us">
               <GoldCallIcon width="50px" height="50px" />
             </a>
           </div>
@@ -58,13 +46,9 @@ const ContactQuickLinks = () => {
           <img src={ReviewIcon} alt="Review Icon" />
           <p className="quick-link-title">Review Us</p>
           <hr />
-          <a
-            href="https://www.google.com/maps/place/Morgan+Custom+Windows"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="review-link"
-            aria-label="Review us on Google"
-          >
+          <a href="https://www.google.com/maps/place/Morgan+Custom+Windows"
+            target="_blank" rel="noopener noreferrer"
+            className="review-link" aria-label="Review us on Google">
             <img src={GoogleReviewIcon} alt="Google Review Icon" />
             Review Us On Google
           </a>

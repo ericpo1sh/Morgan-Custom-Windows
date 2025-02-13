@@ -6,24 +6,29 @@
   font-family: 'Outfit', sans-serif;
 }
 
+/* Flex container */
 .quick-links-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   gap: 20px;
-  max-width: 1100px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
+/* Card Styling */
 .quick-link-item {
-  display: grid;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-color: #d9d9d9;
   border-radius: 10px;
   padding: 20px;
   text-align: center;
   box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  min-width: 220px;
+  width: 100%;
+  max-width: 320px; /* Adjust width for better responsiveness */
 }
 
 .quick-link-item:hover {
@@ -57,6 +62,7 @@
   margin: 10px auto;
 }
 
+/* Social Media Icons */
 .social-icons {
   display: flex;
   justify-content: center;
@@ -65,7 +71,6 @@
 }
 
 .social-link {
-  font-size: 0; /* Removes gap from inline-block elements */
   display: inline-block;
   transition: transform 0.3s ease;
 }
@@ -74,11 +79,11 @@
   transform: scale(1.04);
 }
 
+/* Review Button */
 .review-link {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  margin-top: 10px;
   font-size: 16px;
   text-decoration: none;
   color: #22231f;
@@ -86,7 +91,7 @@
   font-weight: 500;
   padding: 10px 15px;
   border-radius: 5px;
-  transition: background-color 0.3s ease;  
+  transition: background-color 0.3s ease;
   border: 2px solid #3a7d44;
   max-width: 240px;
   margin-left: auto;
@@ -96,7 +101,8 @@
 .review-link img {
   width: 25px;
   margin-right: 10px;
-  margin-bottom: 0px;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 .review-link:hover {
@@ -105,12 +111,21 @@
 }
 
 /* Responsive Design */
+@media screen and (max-width: 1024px) {
+  .quick-links-container {
+    justify-content: center;
+    gap: 15px;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .quick-links-container {
     flex-direction: column;
-    gap: 20px;
+    align-items: center;
   }
 
   .quick-link-item {
+    width: 90%; /* Ensures full width on mobile */
+    max-width: 350px; /* Prevents it from stretching too much */
   }
 }

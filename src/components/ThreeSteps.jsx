@@ -13,7 +13,7 @@ const ThreeSteps = () => {
       <div className="steps-container">
         <div className="step-card">
           <GoldCallIcon/>
-          <h4>Call (000) 000-0000</h4>
+          <h4>Call (918) 202-3996</h4>
           <p>
           Reach out to us today to discuss your window needs and get personalized answers to any questions you have.
           </p>
