@@ -15,6 +15,7 @@ export default defineConfig({
         faq: path.resolve(__dirname, 'faq/index.html'),
         contact: path.resolve(__dirname, 'contact/index.html'),
         privacy: path.resolve(__dirname, 'privacy/index.html'),
+        notfound: path.resolve(__dirname, '404.html')
       },
     },
   },

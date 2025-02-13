@@ -99,4 +99,20 @@
   .cta-button {
     font-size: 18px;
   }
+
+  .contact-intro-content-container h2 {
+    max-width: 380px;
+  }
+
+  .contact-intro-content-container h3 {
+    max-width: 340px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .contact-intro-content-container h1 {
+    max-width: 280px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
