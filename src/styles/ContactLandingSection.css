@@ -72,13 +72,6 @@
   }
 }
 
-@media screen and (max-width: 933px) {
-  #ContactButton {
-    padding: 10px 20px;
-    font-size: 18px;
-  }
-}
-
 @media screen and (max-width: 768px) {
   .landing-contact-section {
     height: auto;
@@ -90,7 +83,7 @@
   }
 
   .contact-intro-content-container h2 {
-    font-size: 32px;
+    font-size: 35px;
     margin-top: 60px;
     margin-bottom: 30px;
     margin-left: auto;
@@ -98,7 +91,7 @@
   }
 
   .contact-intro-content-container h3 {
-    font-size: 16px;
+    font-size: 19px;
   }
 }
 
