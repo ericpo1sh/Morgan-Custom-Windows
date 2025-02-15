@@ -1,5 +1,8 @@
 .HomePageLandingSection {
-  background-image: url('../assets/HomeBackgroundPic.png');
+  background-image: url('../assets/GalleryBackground.png');
+  background-size: cover; 
+  background-position: center;
+  background-repeat: no-repeat;
   height: 550px;
   display: flex;
   align-items: center;
@@ -114,6 +117,22 @@
 @media screen and (max-width: 1095px) {
   .HomePageRightModule img {
     width: 300px;
+  }
+}
+
+@media screen and (max-width: 985px) {
+  .HomePageLandingInnerContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .HomePageRightModule img {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
   }
 }
 

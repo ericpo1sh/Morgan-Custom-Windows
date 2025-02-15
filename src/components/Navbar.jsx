@@ -1,7 +1,7 @@
 import "../styles/Navbar.css";
 import menu_open from "../assets/menu_open.svg";
 import menu_close from "../assets/menu_close.svg";
-import logo from "../assets/MorganCustomWindows.png";
+import logo from "../assets/MorganCustomWindowsWhite.png";
 import { useRef } from "react";
 
 function Navbar() {

@@ -1,5 +1,5 @@
 import HomeBackground from '../assets/HomeBackgroundPic.png'
-import Logo from '../assets/MorganCustomWindows.png'
+import Logo from '../assets/MorganCustomWindowsWhite.png'
 import '../styles/HomeLandingSection.css'
 
 const HomeLandingSection = () => {
