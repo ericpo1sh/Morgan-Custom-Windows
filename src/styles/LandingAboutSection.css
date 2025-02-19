@@ -100,12 +100,27 @@
   }
 }
 
+
 @media screen and (max-width: 615px) {
   .cta-button {
     font-size: 18px;
   }
 
-  .cta-button-container {
-    margin-top: 50px;
+  .about-intro-content-container h1 {
+    max-width: 320px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .about-intro-content-container h2 {
+    max-width: 320px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .about-intro-content-container p {
+    max-width: 280px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
