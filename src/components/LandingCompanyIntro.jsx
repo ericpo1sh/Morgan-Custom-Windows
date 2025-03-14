@@ -15,7 +15,7 @@ const LandingCompanyIntro = () => {
           <div className='FourChecksIntro'>
             <span><CheckBox/><p>Free Estimates</p></span>
             <span><CheckBox/><p>Always On Time</p></span>
-            <span><CheckBox/><p>Licensed & Insured</p></span>
+            <span><CheckBox/><p>Incorporated & Insured</p></span>
             <span><CheckBox/><p>Clear Communication</p></span>
           </div>
           <a title="Book your assessment with Morgan Custom Windows" aria-label='Book your assessment with Morgan Custom Windows' className="cta-button" href='/contact/'>Book Your Assessment</a>

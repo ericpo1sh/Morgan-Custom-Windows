@@ -9,6 +9,7 @@ import ReactDOM from "react-dom/client";
 import Navbar from '../src/components/Navbar'
 import Footer from '../src/components/Footer'
 import TopDescription from '../src/components/TopDescription'
+import WhyItMatters from '../src/components/WhyItMatters';
 
 ReactDOM.createRoot(document.getElementById("faq")).render(
   <>
@@ -16,6 +17,7 @@ ReactDOM.createRoot(document.getElementById("faq")).render(
     <Navbar/>
     <FAQLandingSection/>
     <FAQSection/>
+    <WhyItMatters/>
     <ServiceAreas/>
     <ThreeSteps/>
     <ReviewsSection/>
