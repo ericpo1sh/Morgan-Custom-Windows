@@ -8,7 +8,17 @@
     <link rel="icon" href="https://www.morgancustomwindows.com/favicon.png" type="image/x-icon">
 
     <!-- Fonts and CSS -->
+    <link rel="canonical" href="https://www.morgancustomwindows.com/faq/"/>
     <link rel="stylesheet" href="../src/index.css">
+    <link rel="stylesheet" href="../src/styles/FAQLandingSection.css">
+    <link rel="stylesheet" href="../src/styles/FAQSection.css">
+    <link rel="stylesheet" href="../src/styles/TopDescription.css">
+    <link rel="stylesheet" href="../src/styles/Navbar.css">
+    <link rel="stylesheet" href="../src/styles/ServiceAreas.css">
+    <link rel="stylesheet" href="../src/styles/ThreeSteps.css">
+    <link rel="stylesheet" href="../src/styles/ReviewsSection.css">
+    <link rel="stylesheet" href="../src/styles/BookSection.css">
+    <link rel="stylesheet" href="../src/styles/Footer.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
@@ -17,12 +27,11 @@
     <meta name="description" content="Find answers to the most common questions about our custom window installations, replacements, and services. Learn about energy-efficient windows, warranties, and maintenance." />
     <meta name="keywords" content="window installation FAQ, custom windows questions, energy-efficient windows, window maintenance, window warranty, Morgan Custom Windows FAQ" />
     <meta name="robots" content="index, follow" />
-    <link rel="canonical" href="https://www.morgancustomwindows.com/faq/"/>
 
     <meta property="og:title" content="Frequently Asked Questions | Morgan Custom Windows" />
     <meta property="og:description" content="Have questions about custom window installations? Read our FAQ section to learn about energy-efficient windows, warranties, and more." />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://www.morgancustomwindows.com/faq" />
+    <meta property="og:url" content="https://www.morgancustomwindows.com/faq/" />
     <meta property="og:image" content="https://www.morgancustomwindows.com/MCWOpenGraph.png" />
 
     <meta name="twitter:card" content="summary_large_image" />
@@ -54,54 +63,12 @@
         "founder": "Cameron Morgan",
         "foundingDate": "2024",
         "areaServed": [
-          {
-            "@type": "Place",
-            "name": "Tulsa"
-          },
-          {
-            "@type": "Place",
-            "name": "Broken Arrow"
-          },
-          {
-            "@type": "Place",
-            "name": "Bixby"
-          },
-          {
-            "@type": "Place",
-            "name": "Jenks"
-          },
-          {
-            "@type": "Place",
-            "name": "Owasso"
-          },
-          {
-            "@type": "Place",
-            "name": "Sand Springs"
-          },
-          {
-            "@type": "Place",
-            "name": "Sapulpa"
-          },
-          {
-            "@type": "Place",
-            "name": "Claremore"
-          },
-          {
-            "@type": "Place",
-            "name": "Surrounding Communities"
-          }
+          { "@type": "Place", "name": "Tulsa" }, { "@type": "Place", "name": "Broken Arrow" }, { "@type": "Place", "name": "Bixby" }, { "@type": "Place", "name": "Jenks" }, { "@type": "Place", "name": "Owasso" }, { "@type": "Place", "name": "Sand Springs" }, { "@type": "Place", "name": "Sapulpa" }, { "@type": "Place", "name": "Claremore" }, { "@type": "Place", "name": "Surrounding Communities" }
         ],
-        "makesOffer": {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "Custom Window Installation",
-            "description": "Installation of custom residential and commercial windows in the Tulsa area."
-          }
-        },
+        "makesOffer": { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Custom Window Installation", "description": "Installation of custom residential and commercial windows in the Tulsa area."}},
         "hasMap": "https://maps.app.goo.gl/4G9JqsWHH2VapR6E7"
       }
-      </script>
+    </script>
     <!-- FAQ Schema Markup -->
     <script type="application/ld+json">
       {
@@ -161,7 +128,242 @@
     </script>
   </head>
   <body>
-    <div id="faq"></div>
-    <script type="module" src="./index.jsx"></script>
+    <!-- TopDescription Component -->
+    <div class='DescriptionContainer'>
+      <p>Premium Residential & Commercial Window Company in Northeastern Oklahoma • <span><a href="../contact/index.html">Schedule Estimate Today →</a></span></p>
+    </div>
+
+    <!-- Navbar Component -->
+    <nav class="navbar-container">
+      <div class="logo">
+        <a href="../index.html"><img src="../src/assets/MorganCustomWindowsWhite.png" alt="Morgan Custom Windows Logo" /></a>
+      </div>
+      <img src="../src/assets/menu_open.svg" id="nav-mob-open" class="nav-mob-open" alt="Open Menu" />
+      <ul class="navbar" id="navbar-menu">
+        <img src="../src/assets/menu_close.svg" id="nav-mob-close" class="nav-mob-close" alt="Close Menu" />
+        <li><a href="../index.html" class="nav-link">Home</a></li>
+        <li><a href="../services/index.html" class="nav-link">Services</a></li>
+        <li><a href="../gallery/index.html" class="nav-link">Gallery</a></li>
+        <li><a href="index.html" class="nav-link active">FAQ</a></li>
+        <li><a href="../about/index.html" class="nav-link">About Us</a></li>
+        <li><a href="../contact/index.html" class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
+    <div id="menu-overlay" class="menu-overlay"></div>
+
+    <!-- FAQLandingSection Component -->
+    <section class="landing-faq-section" style="background-image: url('../src/assets/FAQBackground.png');">
+      <div class="faq-intro-content-container">
+        <h1>Custom Window Replacement in Tulsa – FAQs & Expert Answers</h1>
+        <h2>Morgan Custom Windows FAQs</h2>
+        <h3>Serving Tulsa & Northeastern Oklahoma with Quality Window Replacements</h3>
+        <a class="cta-button" href='../contact/index.html' aria-label='Book your assessment with Morgan Custom Windows' title="Book your assessment with Morgan Custom Windows">Book Your Assessment</a>
+      </div>
+    </section>
+
+    <!-- FAQSection Component -->
+    <section class="faq-section">
+      <div class="faq-container">
+        <h2>Frequently Asked Questions</h2>
+        <p>Find answers to common questions about our custom window solutions.</p>
+        <div class="faq-list" id="faq-list-container">
+          <!-- FAQ items will be populated by JavaScript -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ServiceAreas Component -->
+    <section class="service-areas">
+      <div class="service-areas-container">
+        <div class="map-container">
+          <img src="../src/assets/OklahomaState.png" alt="Map highlighting Tulsa Metropolitan Area" class="oklahoma-map" />
+        </div>
+        <div class="content-container">
+          <h2>Your Trusted Window Experts Across the Tulsa Metropolitan Area</h2>
+          <h3>Proudly Serving The Tulsa Metropolitan Area</h3>
+          <p>We proudly serve the entire Tulsa Metropolitan Area, including Tulsa, Broken Arrow, Bixby, Jenks, Owasso, Sand Springs, Sapulpa, Claremore, and surrounding communities. Wherever you are in the region, Morgan Custom Windows is dedicated to providing exceptional window solutions tailored to your home.</p>
+          <div class='cta-container'>
+            <a class="cta-button" aria-label='Book your assessment with Morgan Custom Windows' title="Book your assessment with Morgan Custom Windows" href='../contact/index.html'>Book Your Assessment</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ThreeSteps Component -->
+    <section class="three-steps">
+      <header class="three-steps-header">
+        <h2>How to Get Started with Morgan Custom Windows</h2>
+        <h3>3 Easy Steps to Beautiful Windows in Tulsa</h3>
+      </header>
+      <div class="steps-container">
+        <div class="step-card">
+          <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M87.5 70.8333V79.1667C87.5033 80.6414 87.0657 82.0873 86.2385 83.3295C85.4113 84.5717 84.231 85.5616 82.8452 86.1929C81.4593 86.8242 79.9255 87.0751 78.4181 86.9226C76.9107 86.7701 75.4938 86.2201 74.3333 85.3333L63.0833 77.4167C54.1618 71.3351 44.2466 67.8965 34.0417 67.375C33.9458 67.3658 33.8505 67.3605 33.7542 67.3605C31.4167 67.3605 29.1667 66.4334 27.5 64.7667C25.8333 63.1 24.9062 60.85 24.9062 58.5125C24.9062 56.175 25.8333 53.925 27.5 52.2583C29.1667 50.5917 31.4167 49.6646 33.7542 49.6646C33.8505 49.6646 33.9458 49.6592 34.0417 49.65C45.0209 49.0394 55.7411 45.4056 65.25 39.0833L74.3333 31.6667C75.4938 30.7799 76.9107 30.2299 78.4181 30.0774C79.9255 29.9249 81.4593 30.1758 82.8452 30.8071C84.231 31.4384 85.4113 32.4283 86.2385 33.6705C87.0657 34.9127 87.5033 36.3586 87.5 37.8333V45.8333H91.6667C92.7779 45.8337 93.8633 45.5101 94.7949 44.8971C95.7266 44.2841 96.4695 43.4091 96.9483 42.3648C97.4271 41.3205 97.6249 40.154 97.5223 38.9959C97.4196 37.8378 97.0198 36.7298 96.3625 35.7917L83.6375 16.375C82.9089 15.3409 81.9017 14.5235 80.7205 14.0095C79.5393 13.4955 78.2295 13.3066 76.9458 13.4667C71.2042 14.1929 65.6192 16.079 60.5833 18.9583C55.7755 21.7113 51.3853 25.3788 47.6667 29.75L20.25 57.1667C18.9792 58.4375 17.9375 60.0417 17.2083 61.8333C16.5208 63.5417 16.3333 65.5417 16.3333 67.375C16.3333 69.2083 16.5208 71.125 17.2083 72.8333C17.9375 74.625 18.9792 76.2292 20.25 77.5L34.75 91.6667C35.8488 92.7105 37.1621 93.5203 38.6048 94.0428C40.0476 94.5653 41.5899 94.7895 43.1361 94.7016C44.6822 94.6136 46.1915 94.2157 47.5615 93.5345C48.9315 92.8533 50.132 91.9044 51.0833 90.75L70.2917 68.6667C70.3517 68.5886 70.4065 68.5067 70.4559 68.4218C70.5167 68.3178 70.5739 68.2108 70.6271 68.1014C70.6667 68.0139 70.7042 67.9271 70.7375 67.8417C70.7829 67.7269 70.8242 67.613 70.8625 67.5H70.8333L87.5 70.8333Z" stroke="#22231F" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path d="M75 25C77.3196 25 79.5461 24.0786 81.1967 22.428C82.8473 20.7774 83.7688 18.551 83.7688 16.2312C83.7688 13.9115 82.8473 11.6851 81.1967 10.0345C79.5461 8.38392 77.3196 7.46252 75 7.46252C70.0803 7.46252 65.3529 9.40011 61.8307 12.9223C58.3085 16.4445 56.3708 21.1719 56.3708 26.0917V29.1667C56.3708 29.1667 65.25 25 75 25Z" stroke="#22231F" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <h4>Call (918) 202-3996</h4>
+          <p>Reach out to us today to discuss your window needs and get personalized answers to any questions you have.</p>
+          <div class="step-number-one">1</div>
+        </div>
+        <div class="step-card">
+          <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M25 16.6667H20.8333C19.7221 16.6667 18.6555 17.1057 17.8742 17.887C17.0929 18.6682 16.6667 19.7348 16.6667 20.8333V79.1667C16.6667 80.2779 17.0929 81.3445 17.8742 82.1258C18.6555 82.9071 19.7221 83.3333 20.8333 83.3333H79.1667C80.2779 83.3333 81.3445 82.9071 82.1258 82.1258C82.9071 81.3445 83.3333 80.2779 83.3333 79.1667V20.8333C83.3333 19.7348 82.9071 18.6682 82.1258 17.887C81.3445 17.1057 80.2779 16.6667 79.1667 16.6667H75" stroke="#22231F" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path d="M66.6667 12.5V20.8333M33.3333 12.5V20.8333M16.6667 33.3333H83.3333M68.75 52.0833L45.8333 75L31.25 60.4167" stroke="#22231F" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <h4>Schedule an Assessment</h4>
+          <p>Set up a no-obligation in-home consultation where we’ll assess your windows and provide tailored recommendations.</p>
+          <div class="step-number-two">2</div>
+        </div>
+        <div class="step-card">
+          <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M33.3333 83.3333C33.3333 83.3333 16.6667 70.8333 16.6667 54.1667C16.6667 45.0246 20.2678 36.2526 26.6421 29.8783C33.0164 23.504 41.7884 19.9033 50.9333 19.9033C54.8166 19.9033 58.6583 20.6933 62.1666 22.2083L77.75 7.04167L92.9583 22.2083L77.75 37.7917C76.8666 34.8333 75.25 32.125 72.9166 29.8783C70.625 27.5833 67.8333 25.8333 64.75 24.75C59.5833 23.0417 54.3333 23.0417 49.1666 24.75C46.0833 25.8333 43.2916 27.5833 41.0000 29.8783C38.7083 32.125 36.9583 34.8333 35.8750 37.7917C34.1666 43 34.1666 48.25 35.8750 53.4167C36.9583 56.3333 38.7083 59.0417 41.0000 61.3333C41.0000 61.3333 41.0000 61.3333 41.0416 61.375C41.9166 62.2917 42.8750 63.125 43.8750 63.875L33.3333 83.3333Z" stroke="#22231F" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path d="M60.4167 43.75L70.8334 33.3333L89.5834 52.0833L79.1667 62.5L60.4167 43.75Z" stroke="#22231F" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <h4>Meet Our Experts</h4>
+          <p>Our team will work with you, from finalizing designs to completing a flawless installation that transforms your home.</p>
+          <div class="step-number-three">3</div>
+        </div>
+      </div>
+      <div class="cta-buttons">
+        <a class="cta-button" aria-label='Book your assessment with Morgan Custom Windows' title="Book your assessment with Morgan Custom Windows" href='../contact/index.html'>Book Your Assessment</a>
+      </div>
+    </section>
+
+    <!-- ReviewsSection Component -->
+    <section class="reviews-section" style="background-image: url('../src/assets/ReviewsBackground.png');">
+      <div class="reviews-header">
+        <h2>MORGAN CUSTOM WINDOWS REVIEWS</h2>
+        <h3>Hear What Tulsa Customers Are Saying About Us</h3>
+      </div>
+      <div class="reviews-cards">
+        <div class="elfsight-app-0f1e1dbc-3e0f-4de5-bfd6-a9da36e3c73e" data-elfsight-app-lazy></div>
+      </div>
+    </section>
+
+    <!-- BookSection Component -->
+    <section class="book-section" id="Book">
+      <h2>Book Your <span class="highlight">FREE</span> Assessment</h2>
+      <form class="book-form" id="book-assessment-form">
+        <div class="form-container">
+          <div class="left-form">
+            <div class="form-group">
+              <input type="text" name="name" placeholder="Name" required />
+            </div>
+            <div class="form-group">
+              <input type="email" name="email" placeholder="Email" required />
+            </div>
+            <div class="form-group">
+              <input type="text" name="address" placeholder="Address" />
+            </div>
+          </div>
+          <div class="form-group">
+            <textarea name="message" placeholder="I would like to work on..." rows="5" required></textarea>
+          </div>
+        </div>
+        <button type="submit" class="submit-button" id="submit-form-button">Submit</button>
+      </form>
+    </section>
+
+    <!-- Footer Component -->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-column">
+        <hr/>
+        <div class='links-container'>
+          <ul>
+            <li><a href='../index.html'>Home</a></li>
+            <li><a href='../services/index.html'>Services</a></li>
+            <li><a href='../gallery/index.html'>Gallery</a></li>
+            <li><a href='index.html'>FAQ</a></li>
+          </ul>
+          <ul>
+            <li><a href='../about/index.html'>About Us</a></li>
+            <li><a href='../contact/index.html'>Contact</a></li>
+            <li><a href='../privacy/index.html'>Privacy</a></li>
+          </ul>
+        </div>
+        </div>
+        <div class="footer-column">
+        <hr/>
+          <ul>
+            <li>Monday–Friday: 8 AM–6 PM</li>
+            <li>Saturday: 8 AM–6 PM</li>
+            <li>Sunday: Closed</li>
+          </ul>
+        </div>
+        <div class="footer-column">
+        <hr/>
+          <p>Connect With Us!</p>
+          <div class="social-icons">
+            <a href="https://www.facebook.com/people/Morgan-Custom-Windows/61572983758335/" target="_blank" rel="noopener noreferrer">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M18 2H15C13.6739 2 12.4021 2.52678 11.4645 3.46447C10.5268 4.40215 10 5.67392 10 7V10H7V14H10V22H14V14H17L18 10H14V7C14 6.73478 14.1054 6.48043 14.2929 6.29289C14.4804 6.10536 14.7348 6 15 6H18V2Z" stroke="#D9D9D9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+            <a href="mailto:cam@morgancustomwindows.com">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 4H20C21.1 4 22 4.9 22 6V18C22 19.1 21.1 20 20 20H4C2.9 20 2 19.1 2 18V6C2 4.9 2.9 4 4 4Z" stroke="#D9D9D9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M22 6L12 13L2 6" stroke="#D9D9D9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+            <a href="tel:+19182023996">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M22 16.92V19.92C22 20.4613 21.7893 20.9796 21.4142 21.3548C21.0391 21.7301 20.5208 21.9408 19.96 21.94H19.04C10.66 21.94 3.41 14.69 3.06 6.26V5.34C3.06 4.77922 3.27075 4.26091 3.64589 3.88577C4.02103 3.51062 4.53934 3.3 5.08 3.3H8.08C8.56937 3.29491 9.04602 3.44607 9.43017 3.72956C9.81432 4.01305 10.0854 4.41273 10.21 4.86L11.31 8.94C11.4204 9.33789 11.4149 9.7599 11.2949 10.153C11.1749 10.5461 10.9452 10.8939 10.63 11.16L8.98 12.81C10.3635 15.2465 12.2517 17.3193 14.48 18.98L16.13 17.33C16.4061 17.0148 16.7539 16.7851 17.147 16.6651C17.5401 16.5451 17.9621 16.5396 18.36 16.65L22.44 17.75C22.8873 17.8746 23.2869 18.1457 23.5704 18.5298C23.8539 18.914 24.0051 19.3906 24 19.88L22 16.92Z" stroke="#D9D9D9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; <span id="currentYear"></span> Morgan Custom Windows | All Rights Reserved | <a href="../privacy/index.html">Privacy & Accessibility</a></p>
+      </div>
+    </footer>
+
+    <script src="https://static.elfsight.com/platform/platform.js" async defer></script>
+    <script src="../js/main.js" defer></script>
+    <script>
+      // FAQSection JavaScript (Page-Specific)
+      document.addEventListener('DOMContentLoaded', () => {
+        const faqData = [
+          { question: "What types of windows do you install?", answer: "We specialize in custom window installations, including double-hung, casement, sliding, bay, bow, picture windows, and energy-efficient windows for both residential and commercial properties." },
+          { question: "How long does window installation take?", answer: "Installation time varies depending on the number of windows and complexity, but most projects are completed within one to two days." },
+          { question: "Do you offer free estimates?", answer: "Yes! We provide free assessments to help you determine the best window solutions for your property." },
+          { question: "What are the benefits of energy-efficient windows?", answer: "Energy-efficient windows help reduce energy costs, improve insulation, and increase comfort by maintaining indoor temperatures more effectively." },
+          { question: "How do I maintain my new windows?", answer: "Regular cleaning with mild soap and water, inspecting seals, and lubricating moving parts will help extend the life of your windows." },
+          { question: "Do you offer warranties on your windows?", answer: "Yes! Our windows come with manufacturer warranties, and we stand behind our workmanship with a satisfaction guarantee." }
+        ];
+
+        const faqListContainer = document.getElementById('faq-list-container');
+
+        if (faqListContainer) {
+          faqData.forEach((item, index) => {
+            const faqItemDiv = document.createElement('div');
+            faqItemDiv.className = 'faq-item';
+
+            const questionButton = document.createElement('button');
+            questionButton.className = 'faq-question';
+            questionButton.textContent = item.question;
+            
+            const iconSpan = document.createElement('span');
+            iconSpan.className = 'faq-icon';
+            iconSpan.innerHTML = '&#x25BC;'; // Down arrow
+            questionButton.appendChild(iconSpan);
+
+            const answerDiv = document.createElement('div');
+            answerDiv.className = 'faq-answer';
+            const answerParagraph = document.createElement('p');
+            answerParagraph.textContent = item.answer;
+            answerDiv.appendChild(answerParagraph);
+
+            faqItemDiv.appendChild(questionButton);
+            faqItemDiv.appendChild(answerDiv);
+            faqListContainer.appendChild(faqItemDiv);
+
+            questionButton.addEventListener('click', () => {
+              const allAnswers = faqListContainer.querySelectorAll('.faq-answer.show');
+              const allIcons = faqListContainer.querySelectorAll('.faq-icon.open');
+              
+              allAnswers.forEach(ans => {
+                if (ans !== answerDiv) {
+                  ans.classList.remove('show');
+                }
+              });
+              allIcons.forEach(icn => {
+                  if (icn !== iconSpan) {
+                      icn.classList.remove('open');
+                  }
+              });
+
+              const isOpen = answerDiv.classList.toggle('show');
+              iconSpan.classList.toggle('open', isOpen);
+            });
+          });
+        }
+      });
+    </script>
   </body>
 </html>

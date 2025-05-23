@@ -1,17 +1,29 @@
 <!DOCTYPE html>
 <html lang="en-US">
   <head>
-    <link rel="stylesheet" href="./src/index.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Page Not Found | Morgan Custom Windows</title>
     <meta name="description" content="Oops! The page you're looking for does not exist. Return to Morgan Custom Windows homepage for expert window installation services in Tulsa.">
     <meta name="robots" content="noindex, follow" />
-    <meta http-equiv="refresh" content="3;url=/">
+    <meta http-equiv="refresh" content="3;url=/"> <!-- This redirects to home after 3 seconds -->
     <link rel="icon" href="https://www.morgancustomwindows.com/favicon.png" type="image/x-icon">
+    
+    <!-- Fonts (from original index.html, good to keep for consistency if any base styles use them) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="src/index.css"> <!-- General base styles -->
+    <link rel="stylesheet" href="src/styles/NotFound.css"> <!-- Specific 404 page styles -->
   </head>
   <body>
-    <div id="notfound"></div>
-    <script type="module" src="./notfound/index.jsx"></script>
+    <section class="not-found">
+      <h1>404</h1>
+      <h2>Page Not Found</h2>
+      <p>Oops! The page you’re looking for doesn’t exist.</p>
+      <a href="/" class="home-button">Go Back Home</a>
+    </section>
   </body>
 </html>

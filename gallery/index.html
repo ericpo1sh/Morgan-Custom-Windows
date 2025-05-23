@@ -112,23 +112,23 @@
   <body>
     <!-- TopDescription Component -->
     <div class='DescriptionContainer'>
-      <p>Premium Residential & Commercial Window Company in Northeastern Oklahoma • <span><a href='/contact/'>Schedule Estimate Today →</a></span></p>
+      <p>Premium Residential & Commercial Window Company in Northeastern Oklahoma • <span><a href="../contact/index.html">Schedule Estimate Today →</a></span></p>
     </div>
 
     <!-- Navbar Component -->
     <nav class="navbar-container">
       <div class="logo">
-        <a href="/"><img src="../src/assets/MorganCustomWindowsWhite.png" alt="Morgan Custom Windows Logo" /></a>
+        <a href="../index.html"><img src="../src/assets/MorganCustomWindowsWhite.png" alt="Morgan Custom Windows Logo" /></a>
       </div>
       <img src="../src/assets/menu_open.svg" id="nav-mob-open" class="nav-mob-open" alt="Open Menu" />
       <ul class="navbar" id="navbar-menu">
         <img src="../src/assets/menu_close.svg" id="nav-mob-close" class="nav-mob-close" alt="Close Menu" />
-        <li><a href="/" class="nav-link">Home</a></li>
-        <li><a href="/services/" class="nav-link">Services</a></li>
-        <li><a href="/gallery/" class="nav-link active">Gallery</a></li>
-        <li><a href="/faq/" class="nav-link">FAQ</a></li>
-        <li><a href="/about/" class="nav-link">About Us</a></li>
-        <li><a href="/contact/" class="nav-link">Contact</a></li>
+        <li><a href="../index.html" class="nav-link">Home</a></li>
+        <li><a href="../services/index.html" class="nav-link">Services</a></li>
+        <li><a href="index.html" class="nav-link active">Gallery</a></li>
+        <li><a href="../faq/index.html" class="nav-link">FAQ</a></li>
+        <li><a href="../about/index.html" class="nav-link">About Us</a></li>
+        <li><a href="../contact/index.html" class="nav-link">Contact</a></li>
       </ul>
     </nav>
     <div id="menu-overlay" class="menu-overlay"></div>
@@ -139,7 +139,7 @@
         <h1>Premium Custom Window Installations and Replacements in Tulsa, OK</h1>
         <h2>Morgan Custom Windows Gallery</h2>
         <h3>Discover the Beauty of Our Tailored Window Solutions</h3>
-        <a class="cta-button" href='/contact/' aria-label='Book your assessment with Morgan Custom Windows' title="Book your assessment with Morgan Custom Windows">Book Your Assessment</a>
+        <a class="cta-button" href='../contact/index.html' aria-label='Book your assessment with Morgan Custom Windows' title="Book your assessment with Morgan Custom Windows">Book Your Assessment</a>
       </div>
     </section>
 
@@ -191,15 +191,15 @@
         <hr/>
         <div class='links-container'>
           <ul>
-            <li><a href='/'>Home</a></li>
-            <li><a href='/services/'>Services</a></li>
-            <li><a href='/gallery/'>Gallery</a></li>
-            <li><a href='/faq/'>FAQ</a></li>
+            <li><a href='../index.html'>Home</a></li>
+            <li><a href='../services/index.html'>Services</a></li>
+            <li><a href='index.html'>Gallery</a></li>
+            <li><a href='../faq/index.html'>FAQ</a></li>
           </ul>
           <ul>
-            <li><a href='/about/'>About Us</a></li>
-            <li><a href='/contact/'>Contact</a></li>
-            <li><a href='/privacy/'>Privacy</a></li>
+            <li><a href='../about/index.html'>About Us</a></li>
+            <li><a href='../contact/index.html'>Contact</a></li>
+            <li><a href='../privacy/index.html'>Privacy</a></li>
           </ul>
         </div>
         </div>
@@ -228,204 +228,144 @@
         </div>
       </div>
       <div class="footer-bottom">
-        <p>&copy; <span id="currentYear"></span> Morgan Custom Windows | All Rights Reserved | <a href="/privacy/">Privacy & Accessibility</a></p>
+        <p>&copy; <span id="currentYear"></span> Morgan Custom Windows | All Rights Reserved | <a href="../privacy/index.html">Privacy & Accessibility</a></p>
       </div>
     </footer>
 
+    <!-- Elfsight script for reviews, if it were on this page, would be here -->
+    <!-- <script src="https://static.elfsight.com/platform/platform.js" async defer></script> -->
+    
+    <script src="../js/main.js" defer></script>
     <script>
-      // Navbar JavaScript
-      const menuRef = document.getElementById('navbar-menu');
-      const overlayRef = document.getElementById('menu-overlay');
-      const openMenuButton = document.getElementById('nav-mob-open');
-      const closeMenuButton = document.getElementById('nav-mob-close');
-      const navLinks = menuRef.querySelectorAll('.nav-link');
+      // GallerySection JavaScript (Page-Specific)
+      document.addEventListener('DOMContentLoaded', () => {
+        const galleryData = [
+          { path: '../src/assets/New House Project-1.webp', alt: "Black-framed window installation on white brick exterior by Morgan Custom Windows." },
+          { path: '../src/assets/New House Project-2.webp', alt: "Arched black-framed window installed on white brick building by Morgan Custom Windows." },
+          { path: '../src/assets/New House Project-3.webp', alt: "Custom arched window installation on white painted brick wall by Morgan Custom Windows." },
+          { path: '../src/assets/New House Project-4.webp', alt: "Exterior view of home with custom black-framed arched and rectangular windows by Morgan Custom Windows." },
+          { path: '../src/assets/New House Project-5.webp', alt: "Front view of building with black-framed windows and arched glass door installed by Morgan Custom Windows." },
+          { path: '../src/assets/New House Project-6.webp', alt: "Custom black-trimmed window installations on white brick home exterior by Morgan Custom Windows." },
+          { path: '../src/assets/New House Project-7.webp', alt: "Black-framed window with arched brick detail on white painted exterior by Morgan Custom Windows." },
+          { path: '../src/assets/New House Project-8.webp', alt: "Modern black-trimmed window installations on white brick home by Morgan Custom Windows." },
+          { path: '../src/assets/InterriorDoubleHungWindow.jpg', alt: "Modern Double Hung Window Installation - Interior" },
+          { path: '../src/assets/InterriorCustomWindow.jpg', alt: "Elegant Window Design for Homes - Interior" },
+          { path: '../src/assets/InterriorDiningRoomWindow.jpg', alt: "Beautiful Dining Room Window - Interior" },
+          { path: '../src/assets/InterriorTeaTableWindows.jpg', alt: "Custom Window Design - Interior" },
+          { path: '../src/assets/ExterriorDiningRoomWindow.jpg', alt: "Custom Window Design - Exterior" },
+          { path: '../src/assets/ExterriorViewOfClientHouse.jpg', alt: "Custom Window Replacement - Exterior" },
+          { path: '../src/assets/InterriorCloseUpViewOfWindow.jpg', alt: "Close Up Of New Installation - Interior View" },
+        ];
 
-      const openMenu = () => {
-        if (menuRef) menuRef.style.right = "0";
-        if (overlayRef) overlayRef.style.display = "block";
-      };
+        let currentPage = 1;
+        let selectedImage = null;
+        let imagesPerPage = 6;
 
-      const closeMenu = () => {
-        if (menuRef) menuRef.style.right = "-350px";
-        if (overlayRef) overlayRef.style.display = "none";
-      };
+        const galleryGridContainer = document.getElementById('gallery-grid-container');
+        const paginationContainer = document.getElementById('pagination-container');
+        const modalElement = document.getElementById('gallery-modal');
+        const modalImageElement = document.getElementById('modal-image');
+        const modalCaptionElement = document.getElementById('modal-caption');
+        const modalContentElement = document.getElementById('gallery-modal-content');
 
-      if (openMenuButton) openMenuButton.addEventListener('click', openMenu);
-      if (closeMenuButton) closeMenuButton.addEventListener('click', closeMenu);
-      if (overlayRef) overlayRef.addEventListener('click', closeMenu);
-      navLinks.forEach(link => {
-        link.addEventListener('click', closeMenu);
-      });
+        const updateImagesPerPage = () => {
+          if (window.innerWidth <= 768) {
+            imagesPerPage = 2; 
+          } else if (window.innerWidth <= 1024) {
+            imagesPerPage = 4; 
+          } else {
+            imagesPerPage = 6; 
+          }
+        };
 
-      // BookSection Form JavaScript
-      const form = document.getElementById('book-assessment-form');
-      const submitButton = document.getElementById('submit-form-button');
+        const getPaginatedData = () => {
+          const start = (currentPage - 1) * imagesPerPage;
+          const end = start + imagesPerPage;
+          return galleryData.slice(start, end);
+        };
 
-      if (form && submitButton) {
-        form.addEventListener('submit', async (event) => {
-          event.preventDefault();
-          submitButton.disabled = true;
-          submitButton.textContent = "Sending...";
+        const renderGallery = () => {
+          if (!galleryGridContainer) return;
+          galleryGridContainer.innerHTML = ''; 
+          const paginatedImages = getPaginatedData();
+          paginatedImages.forEach(image => {
+            const galleryItem = document.createElement('div');
+            galleryItem.className = 'gallery-item';
+            galleryItem.onclick = () => handleImageClick(image);
 
-          const formData = new FormData(event.target);
-          formData.append("access_key", "YOUR_WEB3FORMS_ACCESS_KEY_PLACEHOLDER"); 
+            const imgElement = document.createElement('img');
+            imgElement.src = image.path;
+            imgElement.alt = image.alt;
 
-          try {
-            const response = await fetch("https://api.web3forms.com/submit", {
-              method: "POST",
-              body: formData,
-            });
-            const data = await response.json();
-            if (data.success) {
-              alert("Form Submitted Successfully!");
-              event.target.reset();
-            } else {
-              alert("Error: " + data.message);
+            galleryItem.appendChild(imgElement);
+            galleryGridContainer.appendChild(galleryItem);
+          });
+        };
+
+        const renderPagination = () => {
+          if (!paginationContainer) return;
+          paginationContainer.innerHTML = ''; 
+          const totalImages = galleryData.length;
+          const totalPages = Math.ceil(totalImages / imagesPerPage);
+
+          for (let i = 1; i <= totalPages; i++) {
+            const pageButton = document.createElement('button');
+            pageButton.className = 'page-button';
+            if (i === currentPage) {
+              pageButton.classList.add('active');
             }
-          } catch (error) {
-            console.error("Form submission error:", error);
-            alert("Something went wrong. Please try again later.");
+            pageButton.textContent = i;
+            pageButton.onclick = () => handlePageChange(i);
+            paginationContainer.appendChild(pageButton);
           }
-          submitButton.disabled = false;
-          submitButton.textContent = "Submit";
-        });
-      }
+        };
+        
+        const handleImageClick = (image) => {
+          selectedImage = image;
+          if (modalImageElement) modalImageElement.src = image.path;
+          if (modalImageElement) modalImageElement.alt = image.alt;
+          if (modalCaptionElement) modalCaptionElement.textContent = image.alt;
+          if (modalElement) modalElement.style.display = 'flex';
+        };
 
-      // Footer Current Year
-      document.getElementById('currentYear').textContent = new Date().getFullYear();
+        const closeImage = () => {
+          selectedImage = null;
+          if (modalElement) modalElement.style.display = 'none';
+        };
 
-      // GallerySection JavaScript
-      const galleryData = [
-        { path: '../src/assets/New House Project-1.webp', alt: "Black-framed window installation on white brick exterior by Morgan Custom Windows." },
-        { path: '../src/assets/New House Project-2.webp', alt: "Arched black-framed window installed on white brick building by Morgan Custom Windows." },
-        { path: '../src/assets/New House Project-3.webp', alt: "Custom arched window installation on white painted brick wall by Morgan Custom Windows." },
-        { path: '../src/assets/New House Project-4.webp', alt: "Exterior view of home with custom black-framed arched and rectangular windows by Morgan Custom Windows." },
-        { path: '../src/assets/New House Project-5.webp', alt: "Front view of building with black-framed windows and arched glass door installed by Morgan Custom Windows." },
-        { path: '../src/assets/New House Project-6.webp', alt: "Custom black-trimmed window installations on white brick home exterior by Morgan Custom Windows." },
-        { path: '../src/assets/New House Project-7.webp', alt: "Black-framed window with arched brick detail on white painted exterior by Morgan Custom Windows." },
-        { path: '../src/assets/New House Project-8.webp', alt: "Modern black-trimmed window installations on white brick home by Morgan Custom Windows." },
-        { path: '../src/assets/InterriorDoubleHungWindow.jpg', alt: "Modern Double Hung Window Installation - Interior" },
-        { path: '../src/assets/InterriorCustomWindow.jpg', alt: "Elegant Window Design for Homes - Interior" },
-        { path: '../src/assets/InterriorDiningRoomWindow.jpg', alt: "Beautiful Dining Room Window - Interior" },
-        { path: '../src/assets/InterriorTeaTableWindows.jpg', alt: "Custom Window Design - Interior" },
-        { path: '../src/assets/ExterriorDiningRoomWindow.jpg', alt: "Custom Window Design - Exterior" },
-        { path: '../src/assets/ExterriorViewOfClientHouse.jpg', alt: "Custom Window Replacement - Exterior" },
-        { path: '../src/assets/InterriorCloseUpViewOfWindow.jpg', alt: "Close Up Of New Installation - Interior View" },
-      ];
+        const handlePageChange = (pageNumber) => {
+          currentPage = pageNumber;
+          renderGallery();
+          renderPagination();
+        };
 
-      let currentPage = 1;
-      let selectedImage = null;
-      let imagesPerPage = 6;
-
-      const galleryGridContainer = document.getElementById('gallery-grid-container');
-      const paginationContainer = document.getElementById('pagination-container');
-      const modalElement = document.getElementById('gallery-modal');
-      const modalImageElement = document.getElementById('modal-image');
-      const modalCaptionElement = document.getElementById('modal-caption');
-      const modalContentElement = document.getElementById('gallery-modal-content');
-
-      const updateImagesPerPage = () => {
-        if (window.innerWidth <= 768) {
-          imagesPerPage = 2; // For smaller mobile devices
-        } else if (window.innerWidth <= 1024) {
-          imagesPerPage = 4; // For tablets / larger mobile
-        } else {
-          imagesPerPage = 6; // For desktops
+        if (modalElement) {
+          modalElement.addEventListener('click', (event) => {
+            if (event.target === modalElement) { 
+               closeImage();
+            }
+          });
         }
-      };
-
-      const getPaginatedData = () => {
-        const start = (currentPage - 1) * imagesPerPage;
-        const end = start + imagesPerPage;
-        return galleryData.slice(start, end);
-      };
-
-      const renderGallery = () => {
-        galleryGridContainer.innerHTML = ''; // Clear existing images
-        const paginatedImages = getPaginatedData();
-        paginatedImages.forEach(image => {
-          const galleryItem = document.createElement('div');
-          galleryItem.className = 'gallery-item';
-          galleryItem.onclick = () => handleImageClick(image);
-
-          const imgElement = document.createElement('img');
-          imgElement.src = image.path;
-          imgElement.alt = image.alt;
-
-          galleryItem.appendChild(imgElement);
-          galleryGridContainer.appendChild(galleryItem);
-        });
-      };
-
-      const renderPagination = () => {
-        paginationContainer.innerHTML = ''; // Clear existing buttons
-        const totalImages = galleryData.length;
-        const totalPages = Math.ceil(totalImages / imagesPerPage);
-
-        for (let i = 1; i <= totalPages; i++) {
-          const pageButton = document.createElement('button');
-          pageButton.className = 'page-button';
-          if (i === currentPage) {
-            pageButton.classList.add('active');
-          }
-          pageButton.textContent = i;
-          pageButton.onclick = () => handlePageChange(i);
-          paginationContainer.appendChild(pageButton);
+        if(modalContentElement) {
+          modalContentElement.addEventListener('click', (event) => {
+              event.stopPropagation();
+          });
         }
-      };
-      
-      const handleImageClick = (image) => {
-        selectedImage = image;
-        modalImageElement.src = image.path;
-        modalImageElement.alt = image.alt;
-        modalCaptionElement.textContent = image.alt;
-        modalElement.style.display = 'flex';
-      };
 
-      const closeImage = () => {
-        selectedImage = null;
-        modalElement.style.display = 'none';
-      };
-
-      const handlePageChange = (pageNumber) => {
-        currentPage = pageNumber;
-        renderGallery();
-        renderPagination();
-      };
-
-      // Event listener for modal background click
-      if (modalElement) {
-        modalElement.addEventListener('click', (event) => {
-          if (event.target === modalElement) { // Only close if clicked outside modal-content
-             closeImage();
+        window.addEventListener('resize', () => {
+          updateImagesPerPage();
+          const totalPages = Math.ceil(galleryData.length / imagesPerPage);
+          if (currentPage > totalPages) {
+              currentPage = totalPages > 0 ? totalPages : 1;
           }
+          renderGallery();
+          renderPagination();
         });
-      }
-      // Prevent modal close when clicking on the image/caption itself
-      if(modalContentElement) {
-        modalContentElement.addEventListener('click', (event) => {
-            event.stopPropagation();
-        });
-      }
 
-
-      // Initial setup
-      window.addEventListener('resize', () => {
         updateImagesPerPage();
-        // Recalculate current page if it's now out of bounds
-        const totalPages = Math.ceil(galleryData.length / imagesPerPage);
-        if (currentPage > totalPages) {
-            currentPage = totalPages > 0 ? totalPages : 1;
-        }
         renderGallery();
         renderPagination();
       });
-
-      // Initial render
-      updateImagesPerPage();
-      renderGallery();
-      renderPagination();
-
     </script>
   </body>
 </html>

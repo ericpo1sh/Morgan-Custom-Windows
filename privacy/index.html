@@ -8,7 +8,12 @@
     <link rel="icon" href="https://www.morgancustomwindows.com/favicon.png" type="image/x-icon">
 
     <!-- Fonts and CSS -->
+    <link rel="canonical" href="https://www.morgancustomwindows.com/privacy/"/>
     <link rel="stylesheet" href="../src/index.css">
+    <link rel="stylesheet" href="../src/styles/Privacy.css">
+    <link rel="stylesheet" href="../src/styles/TopDescription.css">
+    <link rel="stylesheet" href="../src/styles/Navbar.css">
+    <link rel="stylesheet" href="../src/styles/Footer.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
@@ -16,12 +21,11 @@
     <title>Privacy Policy | Morgan Custom Windows</title>
     <meta name="description" content="Read Morgan Custom Windows' Privacy Policy to understand how we handle your personal data, cookies, and user privacy in compliance with legal standards." />
     <meta name="robots" content="index, follow" />
-    <link rel="canonical" href="https://www.morgancustomwindows.com/privacy/"/>
 
     <meta property="og:title" content="Privacy Policy | Morgan Custom Windows" />
     <meta property="og:description" content="Learn how Morgan Custom Windows protects your privacy, handles cookies, and complies with data protection laws." />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://www.morgancustomwindows.com/privacy" />
+    <meta property="og:url" content="https://www.morgancustomwindows.com/privacy/" />
     <meta property="og:image" content="https://www.morgancustomwindows.com/MCWOpenGraph.png" />
 
     <meta name="twitter:card" content="summary_large_image" />
@@ -53,57 +57,150 @@
         "founder": "Cameron Morgan",
         "foundingDate": "2024",
         "areaServed": [
-          {
-            "@type": "Place",
-            "name": "Tulsa"
-          },
-          {
-            "@type": "Place",
-            "name": "Broken Arrow"
-          },
-          {
-            "@type": "Place",
-            "name": "Bixby"
-          },
-          {
-            "@type": "Place",
-            "name": "Jenks"
-          },
-          {
-            "@type": "Place",
-            "name": "Owasso"
-          },
-          {
-            "@type": "Place",
-            "name": "Sand Springs"
-          },
-          {
-            "@type": "Place",
-            "name": "Sapulpa"
-          },
-          {
-            "@type": "Place",
-            "name": "Claremore"
-          },
-          {
-            "@type": "Place",
-            "name": "Surrounding Communities"
-          }
+          { "@type": "Place", "name": "Tulsa" }, { "@type": "Place", "name": "Broken Arrow" }, { "@type": "Place", "name": "Bixby" }, { "@type": "Place", "name": "Jenks" }, { "@type": "Place", "name": "Owasso" }, { "@type": "Place", "name": "Sand Springs" }, { "@type": "Place", "name": "Sapulpa" }, { "@type": "Place", "name": "Claremore" }, { "@type": "Place", "name": "Surrounding Communities" }
         ],
-        "makesOffer": {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "Custom Window Installation",
-            "description": "Installation of custom residential and commercial windows in the Tulsa area."
-          }
-        },
+        "makesOffer": { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Custom Window Installation", "description": "Installation of custom residential and commercial windows in the Tulsa area."}},
         "hasMap": "https://maps.app.goo.gl/4G9JqsWHH2VapR6E7"
       }
-      </script>
+    </script>
   </head>
   <body>
-    <div id="privacy"></div>
-    <script type="module" src="./index.jsx"></script>
+    <!-- TopDescription Component -->
+    <div class='DescriptionContainer'>
+      <p>Premium Residential & Commercial Window Company in Northeastern Oklahoma • <span><a href="../contact/index.html">Schedule Estimate Today →</a></span></p>
+    </div>
+
+    <!-- Navbar Component -->
+    <nav class="navbar-container">
+      <div class="logo">
+        <a href="../index.html"><img src="../src/assets/MorganCustomWindowsWhite.png" alt="Morgan Custom Windows Logo" /></a>
+      </div>
+      <img src="../src/assets/menu_open.svg" id="nav-mob-open" class="nav-mob-open" alt="Open Menu" />
+      <ul class="navbar" id="navbar-menu">
+        <img src="../src/assets/menu_close.svg" id="nav-mob-close" class="nav-mob-close" alt="Close Menu" />
+        <li><a href="../index.html" class="nav-link">Home</a></li>
+        <li><a href="../services/index.html" class="nav-link">Services</a></li>
+        <li><a href="../gallery/index.html" class="nav-link">Gallery</a></li>
+        <li><a href="../faq/index.html" class="nav-link">FAQ</a></li>
+        <li><a href="../about/index.html" class="nav-link">About Us</a></li>
+        <li><a href="../contact/index.html" class="nav-link">Contact</a></li>
+        <!-- Privacy link is not in the main nav, but if it were, it would be:
+        <li><a href="index.html" class="nav-link active">Privacy</a></li> 
+        -->
+      </ul>
+    </nav>
+    <div id="menu-overlay" class="menu-overlay"></div>
+
+    <!-- Main Privacy Policy Content -->
+    <section class="privacy-section">
+      <div class="privacy-container">
+        <h1>Privacy Policy</h1>
+        <p>Last Updated: 2/6/2025</p>
+
+        <h2>1. Introduction</h2>
+        <p>
+          At Morgan Custom Windows, we value your privacy and are committed to protecting
+          your personal information. This Privacy Policy outlines how we collect, use,
+          and safeguard your data when you visit our website.
+        </p>
+
+        <h2>2. Information We Collect</h2>
+        <p>We may collect the following types of information:</p>
+        <ul>
+          <li>Personal details (name, email, phone number, address) provided via contact forms.</li>
+          <li>Technical data such as IP address, browser type, and pages visited.</li>
+          <li>Cookies and tracking data to improve website performance.</li>
+        </ul>
+
+        <h2>3. How We Use Your Information</h2>
+        <p>Your information may be used for:</p>
+        <ul>
+          <li>Responding to inquiries and providing customer support.</li>
+          <li>Improving website functionality and user experience.</li>
+          <li>Marketing and promotional communications (only if you opt-in).</li>
+        </ul>
+
+        <h2>4. Data Protection & Security</h2>
+        <p>
+          We implement security measures to safeguard your information from unauthorized
+          access, disclosure, or misuse.
+        </p>
+
+        <h2>5. Third-Party Links</h2>
+        <p>
+          Our website may contain links to third-party sites. We are not responsible for
+          the privacy policies or content of those websites.
+        </p>
+
+        <h2>6. Your Rights</h2>
+        <p>
+          You have the right to access, modify, or delete your personal data. Contact us
+          at <a href="mailto:cam@morgancustomwindows.com">cam@morgancustomwindows.com</a> to make a request.
+        </p>
+
+        <h2>7. Updates to this Policy</h2>
+        <p>
+          We may update this Privacy Policy from time to time. Any changes will be posted
+          on this page.
+        </p>
+
+        <h2>8. Contact Us</h2>
+        <p>
+          If you have any questions about our Privacy Policy, please reach out to us at:
+        </p>
+        <p><strong>Email:</strong> <a href="mailto:cam@morgancustomwindows.com">cam@morgancustomwindows.com</a></p>
+        <p><strong>Phone:</strong> <a href="tel:+19182023996">(918) 202-3996</a></p>
+      </div>
+    </section>
+
+    <!-- Footer Component -->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-column">
+        <hr/>
+        <div class='links-container'>
+          <ul>
+            <li><a href='../index.html'>Home</a></li>
+            <li><a href='../services/index.html'>Services</a></li>
+            <li><a href='../gallery/index.html'>Gallery</a></li>
+            <li><a href='../faq/index.html'>FAQ</a></li>
+          </ul>
+          <ul>
+            <li><a href='../about/index.html'>About Us</a></li>
+            <li><a href='../contact/index.html'>Contact</a></li>
+            <li><a href='index.html'>Privacy</a></li>
+          </ul>
+        </div>
+        </div>
+        <div class="footer-column">
+        <hr/>
+          <ul>
+            <li>Monday–Friday: 8 AM–6 PM</li>
+            <li>Saturday: 8 AM–6 PM</li>
+            <li>Sunday: Closed</li>
+          </ul>
+        </div>
+        <div class="footer-column">
+        <hr/>
+          <p>Connect With Us!</p>
+          <div class="social-icons">
+            <a href="https://www.facebook.com/people/Morgan-Custom-Windows/61572983758335/" target="_blank" rel="noopener noreferrer">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M18 2H15C13.6739 2 12.4021 2.52678 11.4645 3.46447C10.5268 4.40215 10 5.67392 10 7V10H7V14H10V22H14V14H17L18 10H14V7C14 6.73478 14.1054 6.48043 14.2929 6.29289C14.4804 6.10536 14.7348 6 15 6H18V2Z" stroke="#D9D9D9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+            <a href="mailto:cam@morgancustomwindows.com">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 4H20C21.1 4 22 4.9 22 6V18C22 19.1 21.1 20 20 20H4C2.9 20 2 19.1 2 18V6C2 4.9 2.9 4 4 4Z" stroke="#D9D9D9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M22 6L12 13L2 6" stroke="#D9D9D9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+            <a href="tel:+19182023996">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M22 16.92V19.92C22 20.4613 21.7893 20.9796 21.4142 21.3548C21.0391 21.7301 20.5208 21.9408 19.96 21.94H19.04C10.66 21.94 3.41 14.69 3.06 6.26V5.34C3.06 4.77922 3.27075 4.26091 3.64589 3.88577C4.02103 3.51062 4.53934 3.3 5.08 3.3H8.08C8.56937 3.29491 9.04602 3.44607 9.43017 3.72956C9.81432 4.01305 10.0854 4.41273 10.21 4.86L11.31 8.94C11.4204 9.33789 11.4149 9.7599 11.2949 10.153C11.1749 10.5461 10.9452 10.8939 10.63 11.16L8.98 12.81C10.3635 15.2465 12.2517 17.3193 14.48 18.98L16.13 17.33C16.4061 17.0148 16.7539 16.7851 17.147 16.6651C17.5401 16.5451 17.9621 16.5396 18.36 16.65L22.44 17.75C22.8873 17.8746 23.2869 18.1457 23.5704 18.5298C23.8539 18.914 24.0051 19.3906 24 19.88L22 16.92Z" stroke="#D9D9D9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; <span id="currentYear"></span> Morgan Custom Windows | All Rights Reserved | <a href="index.html">Privacy & Accessibility</a></p>
+      </div>
+    </footer>
+
+    <script src="../js/main.js" defer></script>
   </body>
 </html>
