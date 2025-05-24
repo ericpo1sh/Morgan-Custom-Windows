@@ -112,23 +112,23 @@
   <body>
     <!-- TopDescription Component -->
     <div class='DescriptionContainer'>
-      <p>Premium Residential & Commercial Window Company in Northeastern Oklahoma • <span><a href="../contact/index.html">Schedule Estimate Today →</a></span></p>
+      <p>Premium Residential & Commercial Window Company in Northeastern Oklahoma • <span><a href="../contact/">Schedule Estimate Today →</a></span></p>
     </div>
 
     <!-- Navbar Component -->
     <nav class="navbar-container">
       <div class="logo">
-        <a href="../index.html"><img src="../src/assets/MorganCustomWindowsWhite.png" alt="Morgan Custom Windows Logo" /></a>
+        <a href="../"><img src="../src/assets/MorganCustomWindowsWhite.png" alt="Morgan Custom Windows Logo" /></a>
       </div>
       <img src="../src/assets/menu_open.svg" id="nav-mob-open" class="nav-mob-open" alt="Open Menu" />
       <ul class="navbar" id="navbar-menu">
         <img src="../src/assets/menu_close.svg" id="nav-mob-close" class="nav-mob-close" alt="Close Menu" />
-        <li><a href="../index.html" class="nav-link">Home</a></li>
-        <li><a href="../services/index.html" class="nav-link">Services</a></li>
-        <li><a href="index.html" class="nav-link active">Gallery</a></li>
-        <li><a href="../faq/index.html" class="nav-link">FAQ</a></li>
-        <li><a href="../about/index.html" class="nav-link">About Us</a></li>
-        <li><a href="../contact/index.html" class="nav-link">Contact</a></li>
+        <li><a href="../" class="nav-link">Home</a></li>
+        <li><a href="../services/" class="nav-link">Services</a></li>
+        <li><a href="./" class="nav-link active">Gallery</a></li>
+        <li><a href="../faq/" class="nav-link">FAQ</a></li>
+        <li><a href="../about/" class="nav-link">About Us</a></li>
+        <li><a href="../contact/" class="nav-link">Contact</a></li>
       </ul>
     </nav>
     <div id="menu-overlay" class="menu-overlay"></div>
@@ -139,7 +139,7 @@
         <h1>Premium Custom Window Installations and Replacements in Tulsa, OK</h1>
         <h2>Morgan Custom Windows Gallery</h2>
         <h3>Discover the Beauty of Our Tailored Window Solutions</h3>
-        <a class="cta-button" href='../contact/index.html' aria-label='Book your assessment with Morgan Custom Windows' title="Book your assessment with Morgan Custom Windows">Book Your Assessment</a>
+        <a class="cta-button" href='../contact/' aria-label='Book your assessment with Morgan Custom Windows' title="Book your assessment with Morgan Custom Windows">Book Your Assessment</a>
       </div>
     </section>
 
@@ -163,7 +163,10 @@
     <!-- BookSection Component -->
     <section class="book-section" id="Book">
       <h2>Book Your <span class="highlight">FREE</span> Assessment</h2>
-      <form class="book-form" id="book-assessment-form">
+      <form class="book-form" action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="access_key" value="7f4317ce-52b2-4b6f-bf8d-7f2e6ce03627" />
+        <input type="checkbox" name="botcheck" class="hidden" style="display: none;" />
+    
         <div class="form-container">
           <div class="left-form">
             <div class="form-group">
@@ -180,7 +183,32 @@
             <textarea name="message" placeholder="I would like to work on..." rows="5" required></textarea>
           </div>
         </div>
+    
         <button type="submit" class="submit-button" id="submit-form-button">Submit</button>
+      <script>
+        document.querySelector(".book-form").addEventListener("submit", function (e) {
+          e.preventDefault();
+      
+          const form = e.target;
+      
+          fetch(form.action, {
+            method: "POST",
+            body: new FormData(form),
+            headers: {
+              'Accept': 'application/json'
+            }
+          }).then(response => {
+            if (response.ok) {
+              alert("Form submitted! Thank you.");
+              form.reset();
+            } else {
+              alert("Something went wrong. Please try again.");
+            }
+          }).catch(error => {
+            alert("Error: " + error.message);
+          });
+        });
+      </script>
       </form>
     </section>
 
@@ -191,15 +219,15 @@
         <hr/>
         <div class='links-container'>
           <ul>
-            <li><a href='../index.html'>Home</a></li>
-            <li><a href='../services/index.html'>Services</a></li>
-            <li><a href='index.html'>Gallery</a></li>
-            <li><a href='../faq/index.html'>FAQ</a></li>
+            <li><a href='../'>Home</a></li>
+            <li><a href='../services/'>Services</a></li>
+            <li><a href='./'>Gallery</a></li>
+            <li><a href='../faq/'>FAQ</a></li>
           </ul>
           <ul>
-            <li><a href='../about/index.html'>About Us</a></li>
-            <li><a href='../contact/index.html'>Contact</a></li>
-            <li><a href='../privacy/index.html'>Privacy</a></li>
+            <li><a href='../about/'>About Us</a></li>
+            <li><a href='../contact/'>Contact</a></li>
+            <li><a href='../privacy/'>Privacy</a></li>
           </ul>
         </div>
         </div>
@@ -228,7 +256,7 @@
         </div>
       </div>
       <div class="footer-bottom">
-        <p>&copy; <span id="currentYear"></span> Morgan Custom Windows | All Rights Reserved | <a href="../privacy/index.html">Privacy & Accessibility</a></p>
+        <p>&copy; <span id="currentYear"></span> Morgan Custom Windows | All Rights Reserved | <a href="../privacy/">Privacy & Accessibility</a></p>
       </div>
     </footer>
 
