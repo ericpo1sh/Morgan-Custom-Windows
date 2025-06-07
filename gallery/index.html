@@ -275,23 +275,24 @@
     <script>
       // GallerySection JavaScript (Page-Specific)
       document.addEventListener('DOMContentLoaded', () => {
-        const galleryData = [
-          { path: '../src/assets/New House Project-1.webp', alt: "Black-framed window installation on white brick exterior by Morgan Custom Windows." },
-          { path: '../src/assets/New House Project-2.webp', alt: "Arched black-framed window installed on white brick building by Morgan Custom Windows." },
-          { path: '../src/assets/New House Project-3.webp', alt: "Custom arched window installation on white painted brick wall by Morgan Custom Windows." },
-          { path: '../src/assets/New House Project-4.webp', alt: "Exterior view of home with custom black-framed arched and rectangular windows by Morgan Custom Windows." },
-          { path: '../src/assets/New House Project-5.webp', alt: "Front view of building with black-framed windows and arched glass door installed by Morgan Custom Windows." },
-          { path: '../src/assets/New House Project-6.webp', alt: "Custom black-trimmed window installations on white brick home exterior by Morgan Custom Windows." },
-          { path: '../src/assets/New House Project-7.webp', alt: "Black-framed window with arched brick detail on white painted exterior by Morgan Custom Windows." },
-          { path: '../src/assets/New House Project-8.webp', alt: "Modern black-trimmed window installations on white brick home by Morgan Custom Windows." },
-          { path: '../src/assets/InterriorDoubleHungWindow.jpg', alt: "Modern Double Hung Window Installation - Interior" },
-          { path: '../src/assets/InterriorCustomWindow.jpg', alt: "Elegant Window Design for Homes - Interior" },
-          { path: '../src/assets/InterriorDiningRoomWindow.jpg', alt: "Beautiful Dining Room Window - Interior" },
-          { path: '../src/assets/InterriorTeaTableWindows.jpg', alt: "Custom Window Design - Interior" },
-          { path: '../src/assets/ExterriorDiningRoomWindow.jpg', alt: "Custom Window Design - Exterior" },
-          { path: '../src/assets/ExterriorViewOfClientHouse.jpg', alt: "Custom Window Replacement - Exterior" },
-          { path: '../src/assets/InterriorCloseUpViewOfWindow.jpg', alt: "Close Up Of New Installation - Interior View" },
-        ];
+      const galleryData = [
+        { path: '../src/assets/IMG_8616.webp', alt: "Brick home with custom black-framed windows by Morgan Custom Windows" },
+        { path: '../src/assets/New House Project-1.webp', alt: "Black-framed window installation on white brick exterior by Morgan Custom Windows." },
+        { path: '../src/assets/New House Project-2.webp', alt: "Arched black-framed window installed on white brick building by Morgan Custom Windows." },
+        { path: '../src/assets/New House Project-3.webp', alt: "Custom arched window installation on white painted brick wall by Morgan Custom Windows." },
+        { path: '../src/assets/New House Project-4.webp', alt: "Exterior view of home with custom black-framed arched and rectangular windows by Morgan Custom Windows." },
+        { path: '../src/assets/New House Project-5.webp', alt: "Front view of building with black-framed windows and arched glass door installed by Morgan Custom Windows." },
+        { path: '../src/assets/New House Project-6.webp', alt: "Custom black-trimmed window installations on white brick home exterior by Morgan Custom Windows." },
+        { path: '../src/assets/New House Project-7.webp', alt: "Black-framed window with arched brick detail on white painted exterior by Morgan Custom Windows." },
+        { path: '../src/assets/New House Project-8.webp', alt: "Modern black-trimmed window installations on white brick home by Morgan Custom Windows." },
+        { path: '../src/assets/InterriorDoubleHungWindow.jpg', alt: "Modern Double Hung Window Installation - Interior" },
+        { path: '../src/assets/InterriorCustomWindow.jpg', alt: "Elegant Window Design for Homes - Interior" },
+        { path: '../src/assets/InterriorDiningRoomWindow.jpg', alt: "Beautiful Dining Room Window - Interior" },
+        { path: '../src/assets/InterriorTeaTableWindows.jpg', alt: "Custom Window Design - Interior" },
+        { path: '../src/assets/ExterriorDiningRoomWindow.jpg', alt: "Custom Window Design - Exterior" },
+        { path: '../src/assets/ExterriorViewOfClientHouse.jpg', alt: "Custom Window Replacement - Exterior" },
+        { path: '../src/assets/InterriorCloseUpViewOfWindow.jpg', alt: "Close Up Of New Installation - Interior View" }
+      ];
 
         let currentPage = 1;
         let selectedImage = null;
